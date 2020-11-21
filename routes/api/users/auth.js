@@ -35,7 +35,7 @@ router.post("/login", async (req,res) => {
                     const token = jwt.sign(
                             {id: user.id},
                             process.env.JWTSECRET,
-                            {expiresIn: 3600 * 5000}
+                            {expiresIn: "1d"}
                     )
                     return res.status(200).json({
                         success: true,
