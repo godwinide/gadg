@@ -29,7 +29,7 @@ const About = () => {
                     <div className="grid-view">
                         <div className="box">
                             <img src='/img/ceo.jpg' alt="man"/>
-                            <h4>John Doe</h4>
+                            <h4>Ogiemwanye Nosa Ighodaro</h4>
                             <p className="title">CEO/FOUNDER</p>
                             <hr className="line"></hr>
                             <p>

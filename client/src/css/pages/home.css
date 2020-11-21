@@ -252,6 +252,8 @@
     .home .wcu .grid-view{
         grid-template-columns: 100%;
         grid-gap: 0;
+        padding: 2em 0;
+        width: 100%;
     }
 
     .home .wcu .grid-view .box{
