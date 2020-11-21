@@ -60,7 +60,7 @@ footer p{
         font-size: 12px;
     }
 
-    h2{
-        font-size: 1.5em !important;
+    h2,h1,h3{
+        font-size: 1.2em !important;
     }
 }
