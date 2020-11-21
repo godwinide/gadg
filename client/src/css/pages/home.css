@@ -103,6 +103,7 @@
     color: #fff;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 89%, 0 100%);
     height: auto;
+    padding: 2em 0;
 }
 .home .intro .grid-view{
     display: grid;
@@ -276,6 +277,10 @@
     .home .team .profiles .profile .img{
         width: 10em;
         height: 10em;
+    }
+
+    .home .intro .image-wrap img{
+        clip-path: none;
     }
 
 }
