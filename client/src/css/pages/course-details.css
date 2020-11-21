@@ -1,0 +1,144 @@
+.preview{
+    background-color: rgb(29, 27, 27);
+    color: #fff;
+    padding: 3em;
+    width: 100% !important;
+}
+.preview .nav-item a{
+    color: #fff;
+}
+
+.preview .nav-item a.active{
+    background-color: var(--p-color-3) !important;
+    color: #fff !important;
+}
+.preview .prev{
+    max-width: 900px;
+    position: relative;
+}
+.preview .preview-image
+{
+    position: relative;
+    width: 35em;
+    height: 25em;
+    margin: 2em auto;
+}
+.preview .brief{
+    max-width: 35em;
+}
+.preview .preview-image .play{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.preview .preview-image .play span{
+    position: absolute;
+    bottom: 1em;
+    left: 38%;
+}
+.preview .preview-image .play i{
+    cursor: pointer;
+    font-size: 2em;
+
+}
+.preview img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.preview h1, .preview h2{
+    font-family: "Roboto Slab", serif;
+    margin-bottom: .5em;
+}
+.preview h1{
+    font-size: 1.7em;
+}
+.preview h2{
+    font-size: 1.3em;
+}
+.preview h3{
+    font-size: 1.2em;
+    font-weight: lighter !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.preview .author h3{
+    font-size: 1em;
+    color: var(--p-color-3);
+}
+
+.preview h2{
+    font-size: 1.3em;
+}
+.preview .actions button{
+    padding: .5em 1em;
+}
+
+.preview button:nth-child(1){
+    background-color: var(--p-color-3);
+    color: #fff;
+    transition: .8s;
+}
+
+.preview button:nth-child(2){
+    border-color: var(--p-color-3);
+    color: #fff;
+    margin-left: 1em;
+    transition: .8s;
+}
+
+.preview button:nth-child(1):hover{
+    background-color: var(--p-color-4);
+    color: gray;
+}
+
+.preview button:nth-child(2):hover{
+    background-color: var(--p-color-4);
+    border-color: var(--p-color-4);
+    color: gray;
+}
+
+.preview .discount{
+    text-decoration: line-through !important;
+    font-size: 1em !important;
+    color: azure;
+}
+
+
+.courselist{
+    color: #000;
+}
+
+@media screen and (max-width: 1000px){
+.preview .actions{
+    display: flex;
+    flex-direction: column;
+}
+
+.preview .actions button{
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.course-detail{
+    width: 100%;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 500px){
+    .preview .preview-image,
+    .preview .brief{
+        max-width: 100%;
+    }
+}

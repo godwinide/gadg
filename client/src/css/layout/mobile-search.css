@@ -1,0 +1,43 @@
+.mobile-search-bar{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.mobile-search-bar .search-bar{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8em;
+    padding: .5em;
+    box-shadow: 2px 2px 10px rgb(218, 217, 217);
+}
+
+.mobile-search-bar input{
+    border: none;
+    outline: none;
+    font-size: .7em !important;
+}
+
+.mobile-search-bar .search-bar form{
+    margin-left: .5em;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.mobile-search-bar .search-bar button{
+    border: none;
+    background-color: #fff;
+}

@@ -1,0 +1,93 @@
+.about-us .mission-wrap{
+    background-color: rgb(234, 236, 241);
+    padding: 2em 0;
+}
+
+.about-us .mission{
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+}
+.about-us .mission-wrap h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3em;
+}
+
+.about-us .mission-wrap p{
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.about-wrap{
+    background: url("/img/office2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 25em;
+    align-items: center;
+    justify-content: center;
+}
+
+.about{
+    background-color: rgba(255, 255, 255, 0.849);
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+
+.leaders {
+    background-color: rgb(254, 255, 235);
+    padding: 4em;
+    margin-bottom: 5em;
+}
+
+.leaders h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2em;
+    font-size: 2.3em;
+}
+
+.leaders .grid-view{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    max-width: 50em;
+    margin: auto;
+}
+
+.leaders .grid-view img{
+    width: 100%;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+.leaders .grid-view .box h4{
+    font-size: 1.4em;
+}
+.leaders .grid-view .box p.title{
+    font-weight: bold;
+}
+.leaders .grid-view .box p{
+    font-family: "Rajdhani", sans-serif;
+}
+.leaders .grid-view .box .line{
+    width: 20%;
+    text-align: left;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 800px){
+    .leaders .grid-view{
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+
+    .about-us h2{
+        font-size: 2em !important;
+    }
+}

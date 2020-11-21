@@ -1,0 +1,51 @@
+.view-course{
+    margin-top: 1em;
+    max-width: 1500px;
+    margin: auto;
+}
+.view-course h1{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+.course-view{
+    display: flex;
+}
+.course-view video{
+    width: 100%;
+}
+
+.course-view .side-nav{
+    height: 100vh;
+    width: 30%;
+    overflow: scroll;
+}
+
+.course-view .side-nav a{
+    color: blueviolet;
+}
+
+
+.course-view .current-view{
+    padding: 1em;
+    width: 70%;
+}
+
+.course-view .current-view .video-wrap{
+    margin: 0 auto;
+    position: relative;
+    max-width: 45em;
+}
+
+@media screen and (max-width: 1000px){
+    .course-view{
+        flex-direction: column;
+    }
+    .course-view .current-view{
+        width: 100%;
+    }
+    .course-view .side-nav{
+        width: 100%;
+        max-width: 45em;
+        margin: auto;
+    }
+}

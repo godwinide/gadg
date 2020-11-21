@@ -1,0 +1,112 @@
+.header{
+    width: 100%;
+    box-shadow: 1px 2px 5px rgb(212, 212, 212);
+    position: relative;
+    padding: 1em;
+    z-index: 20;
+    /* position: fixed; */
+}
+
+.header .cart-i{
+    position: relative;
+}
+
+.header .cart-i .badge{
+    position: absolute;
+    top: -.7em !important;
+    left: -.7em !important;
+    font-size: 100%;
+    border-radius: 50%;
+}
+
+.header .nav-wrap{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.header .brand-logo img{
+    width: 6.875em;
+    height: 2em;
+    margin-top: -1em;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+    width: 100%;
+}
+
+.header .nav .form-inline{
+    width: 40%;
+}
+
+.header .nav .form-inline .input-group{
+    width: 100%;
+}
+
+.header .form-inline .input-group-text{
+    background-color: #fff;
+}
+
+.header .nav input{
+    border-left: none;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0;
+    max-width: 500px;
+}
+
+.header a{
+    text-decoration: none !important;
+    font-size: .9em;
+}
+
+.nav-desktop i{
+    font-size: 1.5em;
+}
+
+.header a:hover{
+    color: var(--p-color-1);
+}
+
+.header ul .avatar{
+    height: 1em;
+    width: 1em;
+    padding: 1.4em;
+    border-radius: 50%;
+    background-color: var(--p-color-2);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+ @media screen and (max-width: 1309px){
+    .hide-lg{
+        display: none;
+    }
+    .nav{
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 11000px){
+    .hide-md{
+        display: none;
+    }
+} 
