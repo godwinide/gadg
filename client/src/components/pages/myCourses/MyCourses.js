@@ -9,7 +9,7 @@ const MyCourses = ({courses}) =>{
     return (
         <div className="mycourses container p-2">
         <div className="c-nav">
-            <h2 className="text-center">My Courses</h2>
+            <h3 className="text-center">My Courses</h3>
         </div>
         <div className="courses">
             {

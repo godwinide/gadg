@@ -27,8 +27,6 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         isAuthenticated
                         ?<>
                         <Link to="/">Home</Link>
-                        <Link to="/about">About us</Link>
-                        <Link to="/contact">Contact us</Link>
                         <Link to="/my-courses">
                         <i className="far fa-play-circle"></i>{" "}
                         My Courses</Link>
@@ -39,8 +37,6 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         </Link></>
                         :<>
                         <Link to="/">Home</Link>
-                        <Link to="/about">About us</Link>
-                        <Link to="/contact">Contact us</Link>
                         <Link to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</Link>
                         <Link to="/signup" className="btn btn-info">Signup</Link>
                         <Link to="/login" className="btn">Login</Link></>
