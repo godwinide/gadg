@@ -10,8 +10,9 @@ module.exports = app => {
     app.use("/api/users/purchase", require("./routes/api/course/purchase"));
     app.use("/api/users/sendcode", require("./routes/api/mail/sendVerification"));
 
-    app.use("*", (req,res) => {
-        return res.sendFile(path.join(__dirname, "/client/build"))
-    })
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+
 
 }
