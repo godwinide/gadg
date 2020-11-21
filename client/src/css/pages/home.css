@@ -103,7 +103,6 @@
     color: #fff;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 89%, 0 100%);
     height: auto;
-    padding: 2em 0;
 }
 .home .intro .grid-view{
     display: grid;
@@ -246,6 +245,9 @@
     .home .faculties-wrap{
         grid-template-columns: repeat(2, 48%);
     }
+    .home .intro{
+        padding: 2em 0;
+    }
     .home .intro .grid-view{
         grid-template-columns: 100%;
         grid-gap: 0;
@@ -253,12 +255,11 @@
     .home .wcu .grid-view{
         grid-template-columns: 100%;
         grid-gap: 0;
-        padding: 2em 0;
-        width: 100%;
+
     }
 
     .home .wcu .grid-view .box{
-        max-width: 90%;
+        max-width: 100%;
         margin: 2em auto;
     }
 
@@ -277,10 +278,6 @@
     .home .team .profiles .profile .img{
         width: 10em;
         height: 10em;
-    }
-
-    .home .intro .image-wrap img{
-        clip-path: none;
     }
 
 }
