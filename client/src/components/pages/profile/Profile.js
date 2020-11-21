@@ -105,7 +105,7 @@ class Profile extends Component  {
         :<div className="profile-wrap">
             <div className="profile">
             <div className="row">
-                <div className="col-3">
+                <div className="col-md-3">
                     <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a className="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
                     <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Change Password</a>
@@ -125,7 +125,7 @@ class Profile extends Component  {
                     </div>
                     <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <form className="form" style={{maxWidth:"30em"}} onSubmit={this.handleSubmit}>
-                    <h4 className="text-center text-info">Change Password</h4>
+                    <h4 className="text-center">Change Password</h4>
                     {
                         this.state.errorMsg
                         &&<div className="alert alert-warning" role="alert">

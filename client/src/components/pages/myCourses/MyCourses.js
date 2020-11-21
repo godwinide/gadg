@@ -8,7 +8,7 @@ import {connect} from 'react-redux'
 const MyCourses = ({courses}) =>{
     return (
         <div className="mycourses container p-2">
-        <div className="c-nav">
+        <div className="c-nav text-center">
             <h3 className="text-center">My Courses</h3>
         </div>
         <div className="courses">
