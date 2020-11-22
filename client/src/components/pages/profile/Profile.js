@@ -104,14 +104,14 @@ class Profile extends Component  {
         ? ProfileSkeleton
         :<div className="profile-wrap">
             <div className="profile">
-                <div className="container mx-auto">
-                <ul className="list-group" style={{maxWidth:"30em"}}>
+                <div className="container">
+                <ul className="list-group mx-auto" style={{maxWidth:"30em"}}>
                     <li className="list-group-item">First name: {this.state.user.firstname}</li>
                     <li className="list-group-item">Last name: {this.state.user.lastname}</li>
                     <li className="list-group-item">Phone: {this.state.user.phone}</li>
                     <li className="list-group-item">Email: {this.state.user.email}</li>
                 </ul>
-                <form className="form mt-2 text-center" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
+                <form className="form mt-2" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
                     <p className="text-center lead">Change Password</p>
                     {
                         this.state.errorMsg
