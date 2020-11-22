@@ -124,8 +124,8 @@ class Profile extends Component  {
                         </div>
                     </div>
                     <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <form className="form" style={{maxWidth:"30em"}} onSubmit={this.handleSubmit}>
-                    <h4 className="text-center">Change Password</h4>
+                    <form className="form" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
+                    <p className="text-center lead">Change Password</p>
                     {
                         this.state.errorMsg
                         &&<div className="alert alert-warning" role="alert">
@@ -146,14 +146,14 @@ class Profile extends Component  {
                     <label for="inputPassword2">New Password:</label>
                         <input autoComplete="new-password" value={this.state.newPass} name="newPass" onInput={this.handleInput} type="password" id="inputPassword2" className="form-control mx-sm-3" aria-describedby="passwordHelpInline"/>
                         <small id="passwordHelpInline" className="text-muted">
-                        Must be 6-20 characters long.
+                        Must be 8-20 characters long.
                         </small>
                     </div>
                     <div className="form-group">
                     <label for="inputPassword3">Retype Password:</label>
                         <input autoComplete="new-password" value={this.state.newPass2} name="newPass2" onInput={this.handleInput} type="password" id="inputPassword3" className="form-control mx-sm-3" aria-describedby="passwordHelpInline"/>
                         <small id="passwordHelpInline" className="text-muted">
-                        Must be 6-20 characters long.
+                        Must be 8-20 characters long.
                         </small>
                     </div>
                     {
