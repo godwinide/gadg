@@ -104,27 +104,14 @@ class Profile extends Component  {
         ? ProfileSkeleton
         :<div className="profile-wrap">
             <div className="profile">
-            <div className="row">
-                <div className="col-md-3">
-                    <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a className="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
-                    <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Change Password</a>
-                    </div>
-                </div>
-                <div className="col-9">
-                    <div className="tab-content" id="v-pills-tabContent">
-                    <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div className="container mx-auto">
-                        <ul className="list-group" style={{maxWidth:"30em"}}>
-                            <li className="list-group-item">First name: {this.state.user.firstname}</li>
-                            <li className="list-group-item">Last name: {this.state.user.lastname}</li>
-                            <li className="list-group-item">Phone: {this.state.user.phone}</li>
-                            <li className="list-group-item">Email: {this.state.user.email}</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div className="tab-pane fade mx-auto" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <form className="form mt-2" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
+                <div className="container mx-auto">
+                <ul className="list-group" style={{maxWidth:"30em"}}>
+                    <li className="list-group-item">First name: {this.state.user.firstname}</li>
+                    <li className="list-group-item">Last name: {this.state.user.lastname}</li>
+                    <li className="list-group-item">Phone: {this.state.user.phone}</li>
+                    <li className="list-group-item">Email: {this.state.user.email}</li>
+                </ul>
+                <form className="form mt-2 text-center" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
                     <p className="text-center lead">Change Password</p>
                     {
                         this.state.errorMsg
@@ -165,13 +152,10 @@ class Profile extends Component  {
                         </button> 
                         :<button className="btn btn-primary">Update</button> 
                     }
-                    </form>
-                    </div>
-                    </div>
-                </div>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
     )
 }
 }
