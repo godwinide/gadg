@@ -111,7 +111,7 @@ class Profile extends Component  {
                     <li className="list-group-item">Phone: {this.state.user.phone}</li>
                     <li className="list-group-item">Email: {this.state.user.email}</li>
                 </ul>
-                <form className="form mt-2" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
+                <form className="form mt-4" style={{maxWidth:"30em"}} onSubmit={this.handleSubmit}>
                     <p className="text-center lead">Change Password</p>
                     {
                         this.state.errorMsg
