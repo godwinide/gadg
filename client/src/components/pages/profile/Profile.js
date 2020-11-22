@@ -123,8 +123,8 @@ class Profile extends Component  {
                         </ul>
                         </div>
                     </div>
-                    <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <form className="form" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
+                    <div className="tab-pane fade mx-auto" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <form className="form mt-2" style={{maxWidth:"30em", margin:"auto"}} onSubmit={this.handleSubmit}>
                     <p className="text-center lead">Change Password</p>
                     {
                         this.state.errorMsg
