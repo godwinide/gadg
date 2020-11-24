@@ -88,23 +88,14 @@ const ViewCourse = props =>{
                     </div>
                     :<div className="video-wrap">
                     <h1>{current.title}</h1>
-                        <Player playsInline poster={current.thumbnail}
-                         src={current.video} type="video/mp4" size="1080"
-                        />
+                        {
+                            current.video 
+                            &&<Player playsInline poster={current.thumbnail}
+                            src={current.video} type="video/mp4" size="1080"
+                           />
+                        }
                         <div className="video-content mt-2">
-                            <ul className="nav nav-tabs" id="myTab" role="tablist">
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link active" id="lesson-tab" data-toggle="tab" href="#lesson" role="tab" aria-controls="lesson" aria-selected="true">Description</a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="files-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">lesson files</a>
-                                </li>
-                            </ul>
-                            <div className="tab-content" id="myTabContent">
-                            <div className="tab-pane fade show active" id="lesson" role="tabpanel" aria-labelledby="lesson-tab">
-                                <p className="mt-3">{current.desc}</p>
-                            </div>
-                            <div className="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab" style={{padding:"2em"}}>
+                            <div className="tab-content container mx-auto">
                                 <AudioPlayer
                                     src={current.audio}
                                     // preload
@@ -113,7 +104,8 @@ const ViewCourse = props =>{
                                     <i className="fas fa-arrow-down"></i>{" "}
                                     Download PDF
                                 </a>
-                            </div>
+                                <p className="lead">Description</p>
+                                <p className="mt-3">{current.desc}</p>
                             </div>
                         </div>
                     </div>
