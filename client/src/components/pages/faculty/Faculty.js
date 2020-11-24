@@ -14,6 +14,11 @@ const Faculty = props =>{
     const [notFound, setNotFound] = useState(false);
     
     useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
+
+    useEffect(()=>{
         if(!id){
             setNotFound(true)
             return;

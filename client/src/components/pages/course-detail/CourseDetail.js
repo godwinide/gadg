@@ -16,6 +16,11 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
     const [price, setPrice] = useState(0);
     const [customTopics, setCustomTopics] = useState([]);
 
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
+
     useEffect(()=> {
         async function _fetchCourse(){
             axios.get("/api/courses/one/"+id)

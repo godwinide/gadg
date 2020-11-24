@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import '../../../css/pages/home.css'
 import {connect} from 'react-redux'
@@ -9,7 +9,11 @@ import Jump from 'react-reveal'
 import RubberBand from 'react-reveal'
 
 const Home = props => {
-    const {faculties, facultyLoading} = props
+    const {faculties, facultyLoading} = props;
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
     return (
         <div className="home home-page">
             <main>
@@ -164,7 +168,21 @@ const Home = props => {
                         <div className="content">
                             <h3>Cummings Jerry</h3>
                             <p className="title">
-                                Content Director
+                                Content Creator
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="profile">
+                        <div className="img"></div>
+                        <div className="content">
+                            <h3>Jeoffrey Ogunsuyi Sunny</h3>
+                            <p className="title">
+                                Content Creator
                             </p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

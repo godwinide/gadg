@@ -34,7 +34,9 @@ class Signup extends React.Component {
         const {error, auth} = this.props;
         if(error.msg !== prevProps.error.msg){
             if(error.id === 'REGISTER_FAIL'){
-                this.setState({ ...this.state, showError:true, msg: error.msg.errors[0].msg})
+                this.setState({ ...this.state, showError:true, msg: error.msg.errors[0].msg});
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0
             }
         }
         if(auth.isAuthenticated){
@@ -98,7 +100,7 @@ class Signup extends React.Component {
                     </div>
                     
                     <div className="input-group">
-                        <button className="btn login-btn">Signup</button>
+                        <button className="btn btn-info">Signup</button>
                     </div>
                     <div className="input-group">
                         <span>Already have an account? <b><Link to="/login">Login</Link></b></span>

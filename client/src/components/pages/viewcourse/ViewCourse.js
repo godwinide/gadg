@@ -20,6 +20,13 @@ const ViewCourse = props =>{
     const [notFound ,setNotFound] = useState(false);
     const [lessonNum, setLessonNum] = useState(0);
     const {match:{params:{id}}} = props;
+
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
+
+
     useEffect(() =>{
         const config = {
             headers:{

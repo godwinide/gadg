@@ -30,6 +30,8 @@ class Login extends React.Component {
         if(error.id !== prevProps.error.id){
             if(error.id === 'LOGIN_FAIL'){
                 this.setState({ ...this.state, msg: error.msg.errors[0].msg})
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0
             }else{
                 this.setState({...this.state, msg: null})
             }

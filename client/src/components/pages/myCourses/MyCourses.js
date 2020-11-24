@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import  '../../../css/pages/mycourses.css';
 import Course from './Course';
 import {connect} from 'react-redux'
 
 
 const MyCourses = ({courses}) =>{
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
     return (
         <div className="mycourses container p-2">
         <div className="c-nav text-center">

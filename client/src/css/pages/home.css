@@ -219,10 +219,14 @@
 }
 
 .home .team .profiles .profile:nth-child(3) .img{
-    background-image: url(/img/lakesbim.jpg);
+    background-image: url(/img/joeffrey.jpg);
 }
 
 .home .team .profiles .profile:nth-child(4) .img{
+    background-image: url(/img/lakesbim.jpg);
+}
+
+.home .team .profiles .profile:nth-child(5) .img{
     background-image: url(/img/godwin.jpg);
 }
 

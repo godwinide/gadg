@@ -11,6 +11,11 @@ const Cart = ({cart, whish, removeItemFromCart}) => {
         const id = e.target.getAttribute("name");
         removeItemFromCart(id);
     }
+    
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
 
     useEffect(()=>{
         const _total = cart.reduce((t, item) => t + parseFloat(item.price), 0)

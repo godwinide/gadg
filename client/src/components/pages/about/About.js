@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../../css/pages/about.css'
 
 const About = () => {
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+    },[])
     return (
         <div className="about-us-wrap">
             <div className="about-us">
@@ -28,7 +32,7 @@ const About = () => {
 
                     <div className="grid-view">
                         <div className="box">
-                            <img src='/img/ceo.jpg' alt="man"/>
+                            <img src='/img/ceo.jpg' alt="Ogiemwanye" />
                             <h4>Ogiemwanye Nosa Ighodaro</h4>
                             <p className="title">CEO/FOUNDER</p>
                             <hr className="line"></hr>
@@ -37,7 +41,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="box">
-                            <img src='/img/contentcreator.jpg' alt="man"/>
+                            <img src='/img/contentcreator.jpg' alt="Cummings"/>
                             <h4>Cummings Jerry</h4>
                             <p className="title">Content Creator</p>
                             <hr className="line"></hr>
@@ -46,8 +50,17 @@ const About = () => {
                             </p>
                         </div>
                         <div className="box">
-                            <img src='/img/lakesbim.jpg' alt="man"/>
-                            <h4>Akin Prince</h4>
+                            <img src='/img/joeffrey.jpg' alt="Joeffrey"/>
+                            <h4>Jeoffrey Ogunsuyi Sunny</h4>
+                            <p className="title">Content Creator</p>
+                            <hr className="line"></hr>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div className="box">
+                            <img src='/img/lakesbim.jpg' alt="Akinuli"/>
+                            <h4>Akinuli Olamilekan Prince</h4>
                             <p className="title">Programmer</p>
                             <hr className="line"></hr>
                             <p>
@@ -55,7 +68,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="box">
-                            <img src='/img/godwin.jpg' alt="man"/>
+                            <img src='/img/godwin.jpg' alt="Godwin"/>
                             <h4>Godwin Idemudia</h4>
                             <p className="title">Programmer</p>
                             <hr className="line"></hr>
