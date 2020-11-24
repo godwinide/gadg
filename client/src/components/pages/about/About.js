@@ -76,6 +76,15 @@ const About = () => {
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
                         </div>
+                        <div className="box">
+                            <img src='/img/godwin.jpg' alt="Godwin"/>
+                            <h4>Godwin Idemudia</h4>
+                            <p className="title">Programmer</p>
+                            <hr className="line"></hr>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
