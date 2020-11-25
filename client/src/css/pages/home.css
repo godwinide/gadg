@@ -227,12 +227,14 @@
 .home .team .profiles .profile:nth-child(3) .img{
     background-image: url(/img/joeffrey.jpg);
 }
-
 .home .team .profiles .profile:nth-child(4) .img{
+    background-image: url(/img/chalton.jpg);
+}
+.home .team .profiles .profile:nth-child(5) .img{
     background-image: url(/img/lakesbim.jpg);
 }
 
-.home .team .profiles .profile:nth-child(5) .img{
+.home .team .profiles .profile:nth-child(6) .img{
     background-image: url(/img/godwin.jpg);
 }
 

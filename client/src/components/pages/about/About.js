@@ -147,6 +147,20 @@ const About = () => {
                     <div className="profile">
                         <div className="img"></div>
                         <div className="content">
+                            <p className="name">Carlton Akhigbe</p>
+                            <p className="title">
+                                Human Resources
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="profile">
+                        <div className="img"></div>
+                        <div className="content">
                             <p className="name">Akinuli Olamilekan Prince</p>
                             <p className="title">
                                 Programmer
