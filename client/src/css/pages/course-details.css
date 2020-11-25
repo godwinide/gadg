@@ -4,6 +4,9 @@
     padding: 3em;
     width: 100% !important;
 }
+.preview p{
+    margin: 0 !important;
+}
 .preview .nav-item a{
     color: #fff;
 }
@@ -121,6 +124,10 @@
 .preview .actions{
     display: flex;
     flex-direction: column;
+}
+
+.preview {
+    margin-left: 0 !important;
 }
 
 .preview .actions button{

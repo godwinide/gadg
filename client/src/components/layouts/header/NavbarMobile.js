@@ -31,14 +31,14 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
             {
                 isAuthenticated
                 ?<ul className="top">
-                    <li><NavLink to="/"><i className="far fa-home"></i></NavLink></li>
+                    <li><NavLink exact to="/"><i className="far fa-home"></i></NavLink></li>
                     <li onClick={handleOpenSearch}><i className="far fa-search"></i></li>
                     <li><NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i></NavLink></li>
                     <li><NavLink to="/my-courses"><i className="far fa-play-circle"></i></NavLink></li>
                     <li><NavLink to="/profile"><i className="far fa-user"></i></NavLink></li>
                 </ul>
                 :<ul className="top">
-                    <li><NavLink to="/"><i className="far fa-home"></i></NavLink></li>
+                    <li><NavLink exact to="/"><i className="far fa-home"></i></NavLink></li>
                     <li onClick={handleOpenSearch}><i className="far fa-search"></i></li>
                     <li><NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i></NavLink></li>
                     <li><NavLink to="/login"><i className="far fa-user"></i></NavLink></li>
@@ -52,7 +52,7 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
                         <i className="fas fa-bars pl-2" onClick={handleMenu}></i>
                     </div>
                 </li>
-                <li><NavLink to="/"><i className="far fa-home"></i></NavLink></li>
+                <li><NavLink exact to="/"><i className="far fa-home"></i></NavLink></li>
                 <li onClick={handleOpenSearch}><i className="far fa-search"></i></li>
                 <li><NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i></NavLink></li>
                 <li><NavLink to="/my-courses"><i className="far fa-play-circle"></i></NavLink></li>
@@ -64,7 +64,7 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
                         <i className="fas fa-bars pl-2" onClick={handleMenu}></i>
                     </div>
                 </li>
-                <li><NavLink to="/"><i className="far fa-home"></i></NavLink></li>
+                <li><NavLink exact to="/"><i className="far fa-home"></i></NavLink></li>
                 <li onClick={handleOpenSearch}><i className="far fa-search"></i></li>
                 <li><NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i></NavLink></li>
                 <li><NavLink to="/login" className="cart-i"><i className="far fa-user"></i></NavLink></li>

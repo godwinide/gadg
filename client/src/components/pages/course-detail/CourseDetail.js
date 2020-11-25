@@ -143,12 +143,12 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                         ?<Link to="/cart" className="btn btn-info">
                                         <i className="far fa-shopping-cart"></i>
                                         {" "}Go to Cart</Link>
-                                        :<button className="btn" onClick={handleAddToCart2}>
+                                        :<button className="btn" onClick={handleAddToCart2} style={{margin:"0 !important"}}>
                                         <i className="far fa-shopping-cart"></i>
                                         Add to Cart</button>
                                     }
                                 </div>
-                                <div className="course-list-wrap mt-4">
+                                <div className="course-list-wrap">
                                     <p>check at least one topic you want to purchase</p>
                                     <ul className="list-group list-group-flush courselist">
                                         {

@@ -6,7 +6,7 @@ import Skeleton from 'react-loading-skeleton';
 const CourseDetailSkeleton = (props) =>{
     return (
         <div className="course-detail">
-            <div className="preview row">
+            <div className="preview row" style={{marginLeft:"-2em !important"}}>
                 <Skeleton height={400} width={500} className="prev col-md-6"/>
                 <div className="col-md-6">
                     <Skeleton height={10} width={500}/>
