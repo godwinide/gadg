@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react'
+import {Link, NavLink} from 'react-router-dom'
 import '../../../css/layout/navbar-desktop.css';
 
 const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => {
@@ -26,20 +26,26 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                     {
                         isAuthenticated
                         ?<>
-                        <Link to="/">Home</Link>
-                        <Link to="/my-courses">
+                        <NavLink exact to="/">Home</NavLink>
+                        <NavLink to="/about">About Us</NavLink>
+                        <NavLink to="/contact">Contact Us</NavLink>
+                        <NavLink to="/my-courses">
                         <i className="far fa-play-circle"></i>{" "}
-                        My Courses</Link>
-                        <Link to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</Link>
-                        <Link to="#" onClick={logout} className="btn">Logout</Link>
-                        <Link to="/profile" className="avatar">
+                        My Courses</NavLink>
+                        <NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</NavLink>
+                        <NavLink to="#" onClick={logout} className="btn btn-secondary">Logout</NavLink>
+                        <NavLink to="/profile" className="avatar">
                             {user.firstname[0].toUpperCase() + user.lastname[0].toUpperCase()}
-                        </Link></>
+                        </NavLink></>
                         :<>
-                        <Link to="/">Home</Link>
-                        <Link to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</Link>
-                        <Link to="/signup" className="btn btn-info">Signup</Link>
-                        <Link to="/login" className="btn">Login</Link></>
+                        <NavLink exact to="/">Home</NavLink>
+                        <NavLink to="/about">About Us</NavLink>
+                        <NavLink to="/contact">Contact Us</NavLink>
+                        <NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</NavLink>
+                        <NavLink to="/signup" className="btn text-white s-action">Signup</NavLink>
+                        <NavLink to="/login" className="btn btn-secondary text-white" style={{display:"flex", alignItems:"center"}}>Login
+                            <i className="fas fa-arrow-alt-square-right" style={{marginTop:".2em", marginLeft:".1em"}}></i>
+                        </NavLink></>
                     }
                 </ul>
             </div>

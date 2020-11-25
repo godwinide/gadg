@@ -17,8 +17,8 @@ const MyCourses = ({courses}) =>{
         <div className="courses">
             {
                 courses.length > 0
-                ?courses.map(course => (
-                    <Course course={course} />
+                ?courses.map((course,i) => (
+                    <Course key={i} course={course} />
                 ))
                 :<p className="text-center">You havent purchased any course.</p>
             }

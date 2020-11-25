@@ -45,9 +45,9 @@ const Contact = () => {
                         <label for="exampleInputPassword1">Phone Number</label>
                         <input type="number" className="form-control"/>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <button type="submit" className="btn btn-dark">Send</button>
                 </form>

@@ -54,7 +54,7 @@ class Profile extends Component  {
             })
             return;
         }
-        else if(newPass != newPass2){
+        else if(newPass !== newPass2){
             this.setState({
                 ...this.state,
                 errorMsg: "Both passwords are not thesame"

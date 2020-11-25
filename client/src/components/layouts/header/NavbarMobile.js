@@ -26,7 +26,7 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
                 <i className="fas fa-bars" onClick={handleMenu}></i>
             </div>
             <div className="m-logo-wrap">
-                <img src="/img/logo.png"></img>
+                <img src="/img/logo.png" alt="gadgacademia"></img>
             </div>
             {
                 isAuthenticated
@@ -46,7 +46,7 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
             }
             {
             isAuthenticated
-            ?<ul className="bottom">
+            ?<ul className="bottom" style={{width:"100%", margin:"0"}}>
                 <li>
                     <div className="bar-wrap" onClick={handleMenu}>
                         <i className="fas fa-bars pl-2" onClick={handleMenu}></i>

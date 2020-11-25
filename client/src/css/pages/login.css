@@ -7,11 +7,27 @@
     position: relative;
     padding: 5em 0;
 }
+
+.login-wrap p{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--p-color-3);
+}
+
+.form-control{
+    border-radius: 0 !important;
+}
+
+.login-wrap .input-group-text{
+    background-color: var(--p-color-5) !important;
+    color: #fff;
+}
 .login{
     margin: 0 auto;
     max-width: 400px;
     padding: 2em;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.808);
     color: #fff;
     border-radius: 10px;
 }

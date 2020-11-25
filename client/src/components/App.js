@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import {connect} from 'react-redux'
 import store from '../store';
-import {fetchFaculties} from '../actions/CourseActions'
+import {fetchFaculties, fetchAllCourses} from '../actions/CourseActions'
 import {loadUser} from '../actions/AuthActions'
+import {getCartItems} from '../actions/CartActions'
 
 import Navbar from './layouts/header/Navbar'
 import Home from './pages/home/Home'
@@ -25,11 +26,12 @@ import NotFound from './pages/error-pages/NotFound';
 
 
 
-const  App = props => {
-    const {isLoggedIn} = props;
+const  App = () => {
     useEffect(()=>{
         store.dispatch(loadUser());
         store.dispatch(fetchFaculties());
+        store.dispatch(fetchAllCourses());
+        store.dispatch(getCartItems());
     },[])
     
     

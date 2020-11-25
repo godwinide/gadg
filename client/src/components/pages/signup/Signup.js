@@ -48,7 +48,7 @@ class Signup extends React.Component {
     return (
         <div className="login-wrap">
             <div className="container login">
-            <h4>Signup</h4>
+            <h4 className="text-center">Signup</h4>
             <hr/> 
             <form onSubmit={this.handleSubmit}>
                 { this.state.msg
@@ -98,11 +98,20 @@ class Signup extends React.Component {
                         <input required type="password" name="password2" className="form-control" placeholder="Retype Password" onInput={this.handleInput} />
                     </div>
                     </div>
+
+                    <div className="form-group">
+                        <div className="form-check">
+                        <input required className="form-check-input" type="checkbox" id="gridCheck"/>
+                        <label className="form-check-label" for="gridCheck">
+                            Agree to our terms and condintion
+                        </label>
+                        </div>
+                    </div>
                     
                     <div className="input-group">
-                        <button className="btn btn-info">Signup</button>
+                        <button className="btn btn-danger mx-auto my-2">Signup</button>
                     </div>
-                    <div className="input-group">
+                    <div className="input-group mt-3">
                         <span>Already have an account? <b><Link to="/login">Login</Link></b></span>
                     </div>
                 </div>

@@ -49,6 +49,7 @@
 
     .nav-mobile .bottom {
         display: flex;
+        width: 100%;
     }
 
     .nav-mobile .top{

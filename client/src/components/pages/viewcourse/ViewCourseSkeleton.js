@@ -17,7 +17,7 @@ const ViewCourseSkeleton = () =>{
                 </div>
                 {/* side nav start*/}
                 <div className="side-nav">
-                <div class="accordion mr-4 mt-2" id="accordionExample">
+                <div className="accordion mr-4 mt-2" id="accordionExample">
                    <Skeleton width="100%" height="2em" className="mb-2" />
                    <Skeleton width="100%" height="2em" className="mb-2" />
                    <Skeleton width="100%" height="2em" className="mb-2" />

@@ -9,7 +9,7 @@ import {
     REGISTER_FAIL,
     LOGOUT_SUCCESS
 } from './types'
-import {clearErrors, returnErrors} from './ErrorActions'
+import {returnErrors} from './ErrorActions'
 
 // check token and load user
 export const loadUser = () => (dispatch, getState) => {

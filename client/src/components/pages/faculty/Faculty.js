@@ -66,9 +66,9 @@ const Faculty = props =>{
                 {
                     courses.map(course =>(
                         <Link className="course" to={"/view-course/"+course.titleSlug}>
-                            <img src={course.thumbnail} alt="course image"/>
+                            <img src={course.thumbnail} alt="course"/>
                             <div info>
-                                <h3 className="title">{course.title}</h3>
+                                <p className="title">{course.title}</p>
                                 <p>by {course.instructor}</p>
                                 <h2>₦{course.price}</h2>
                             </div>
@@ -76,7 +76,6 @@ const Faculty = props =>{
                     ))
                 }
             </div>
-
         </div>
         :
         <div className="faculty">

@@ -1,9 +1,9 @@
 :root{
     --p-color-1: #0f7c90;
     --p-color-2: rgb(85, 21, 85);
-    --p-color-3: #ec5252;
+    --p-color-3: #ec3636;
     --p-color-4: #ec5252;
-    --p-color-5: #ebe1e1;
+    --p-color-5: #BF55EC;
 }
 
 
@@ -26,12 +26,12 @@ a{
 }
 
 a:hover{
-    color: #000;
+    color: var(--p-color-3);
     text-decoration: none;
 }
 
 a.active{
-    color: var(--p-color-1);
+    color: var(--p-color-3);
 }
 
 footer{

@@ -116,7 +116,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                         Full Payment with all course videos and files with discount 
                                     </p>
                                     <div className="price-wrap">
-                                        <h2>₦{course.discountPrice} (25% off)</h2>
+                                        <p className="lead">₦{course.discountPrice} ({course.discount}% off)</p>
                                         <h4 className="discount">₦{course.price}</h4>
                                     </div>
                                     <div className="actions">
@@ -134,8 +134,8 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                             <div className="tab-pane fade" id="custom" role="tabpanel" aria-labelledby="custom-tab">
                                 <p> <i className="fas fa-info bg-warning p-2" style={{borderRadius:"50%"}}></i>{" "}
                                     You won't get a discount</p>
-                                <div className="price-wrap">
-                                    <h2>₦{price}</h2>
+                                <div className="price-wrap my-0">
+                                    <p className="lead">₦{price}</p>
                                 </div>
                                 <div className="actions">
                                     {
@@ -177,12 +177,12 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
             </div>
         <div className="container mb-5">
             <div className="course-description mt-5">
-                    <h2>Course description</h2>
+                    <p className="lead">Course description</p>
                     <p>{course.description}</p>
                 </div>
                 <div className="course-content mt-5">
-                    <h2>Course Content</h2>
-                    <ul class="list-group">
+                    <p className="lead">Course Content</p>
+                    <ul class="list-group container">
                         {
                             course.topics
                             && course.topics.map((topic, n) => (

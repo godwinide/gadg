@@ -42,7 +42,7 @@ class Login extends React.Component {
     return (
         <div className="login-wrap">
             <div className="container login">
-            <h2>Login to your GadgAcademia account</h2>
+            <p className="text-center lead">Login to your GadgAcademia account</p>
             <hr/> 
             { this.state.msg
                     && <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -69,7 +69,7 @@ class Login extends React.Component {
                     </div>
                     
                     <div className="input-group">
-                        <button className="btn login-btn">Login</button>
+                        <button className="btn btn-danger mx-auto my-2">Login</button>
                     </div>
                     <div className="input-group">
                         <span>or <Link to="forgot-password">forgot password?</Link></span>

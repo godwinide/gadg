@@ -18,7 +18,7 @@ const SideMenu = ({isOpen, handleMenu, logout, isAuthenticated}) =>{
                         ?<>
                         <li><Link className="text-info" to="/profile">Profile</Link></li>
                         <li><Link className="text-info" to="/my-courses">My Courses</Link></li>
-                        <li><Link className="text-info" onClick={logout}>Logout</Link></li>
+                        <li className="text-info" onClick={logout}>Logout</li>
                         </>
                         :<>
                         <li><Link className="text-info" to="/login">Login</Link></li>

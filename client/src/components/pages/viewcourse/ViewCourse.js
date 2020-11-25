@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import  '../../../css/pages/view-course.css';
-import {Link} from 'react-router-dom'
 import axios from 'axios'
 import store from '../../../store'
 import ViewCourseSkeleton from './ViewCourseSkeleton';
@@ -59,7 +58,7 @@ const ViewCourse = props =>{
             setLoading(false);
             setNotFound(true);
         })
-    },[dep, lessonNum]);
+    },[dep, lessonNum, id]);
 
     const handleChangeIndex = e => {
         const index = e.target.dataset.index;
@@ -77,7 +76,7 @@ const ViewCourse = props =>{
                 <div className="current-view">
                     {
                     current.locked
-                    ?<div className="video-wrap mt-5">
+                    ?<div className="video-wrap container mt-5 mx-auto">
                         <p className="lead">Sorry, haven't purchased this topic.</p>
                         <PayButton amount={current.price}
                          successCallBack={()=> true}
@@ -95,17 +94,32 @@ const ViewCourse = props =>{
                            />
                         }
                         <div className="video-content mt-2">
-                            <div className="tab-content container mx-auto">
+                            <div className="container mx-auto">
                                 <AudioPlayer
                                     src={current.audio}
+                                    autoPlay={false}
                                     // preload
                                 />
-                                <a download={current && current.pdf} href={current.pdf} className="btn btn-info" style={{marginTop:"2em"}}>
+                                <a download={current && current.pdf} href={current.pdf} className="btn btn-info" style={{marginTop:"2em", display:"block"}}>
                                     <i className="fas fa-arrow-down"></i>{" "}
                                     Download PDF
                                 </a>
-                                <p className="lead">Description</p>
-                                <p className="mt-3">{current.desc}</p>
+                                <div className="accordion mt-2" id="accordionExample">
+                                    <div className="card">
+                                        <div className="card-header" id="headingOne">
+                                        <h2 className="mb-0">
+                                            <button className="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Description
+                                            </button>
+                                        </h2>
+                                        </div>
+                                        <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div className="card-body">
+                                            <p className="mt-3">{current.desc}</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,25 +127,25 @@ const ViewCourse = props =>{
                 </div>
                 {/* side nav start*/}
                 <div className="side-nav">
-                <div className="accordion mr-4 my-4" id="accordionExample">
+                <div className="accordion mr-4 my-4 mx-auto" id="accordionExample">
                     <div className="card">
-                        <h4 className="text-center">Course Topics</h4>
+                        <p className="text-center lead">Course Topics</p>
                         <ul className="list-group">
                             {
                                 topics.map((top,i) => (
                                     top.locked
                                     ?
-                                    <button data-index={i} type="button" 
+                                    <button key={i} data-index={i} type="button" 
                                     onClick={handleChangeIndex}
-                                    class={`list-group-item list-group-item-action ${top.id === current.id ? 'active' : ""}`}>
+                                    className={`list-group-item list-group-item-action ${top.id === current.id ? 'active' : ""}`}>
                                         {top.title}{" "}
                                         <span className="badge badge-danger badge-pill">
                                         <i className="fas fa-lock"></i>
                                         </span>
                                     </button>
-                                    :<button data-index={i} type="button"
+                                    :<button key={i} data-index={i} type="button"
                                     onClick={handleChangeIndex}
-                                    class={`list-group-item list-group-item-action ${top.id === current.id ? 'active' : ""}`}>
+                                    className={`list-group-item list-group-item-action ${top.id === current.id ? 'active' : ""}`}>
                                         {top.title}{" "}
                                     </button>
                                 ))

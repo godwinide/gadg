@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import NavbarDesktop from './NavbarDesktop'
 import NavbarMobile from './NavbarMobile'
 import '../../../css/layout/navbar.css'
@@ -7,9 +7,6 @@ import {logout} from '../../../actions/AuthActions'
 import {connect} from 'react-redux'
 
 const Navbar = props => {
-    useEffect(()=>{
-        props.getCartItems()
-    }, [])
     return (
         <div>
             <NavbarDesktop pprop={props}/>
