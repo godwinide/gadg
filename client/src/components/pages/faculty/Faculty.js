@@ -68,7 +68,7 @@ const Faculty = props =>{
                         <Link className="course" to={"/view-course/"+course.titleSlug}>
                             <img src={course.thumbnail} alt="course"/>
                             <div info>
-                                <p className="title">{course.title}</p>
+                                <p className="title purple-text truncate">{course.title}</p>
                                 <p>by {course.instructor}</p>
                                 <h2>₦{course.price}</h2>
                             </div>

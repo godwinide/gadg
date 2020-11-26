@@ -32,8 +32,8 @@ const Cart = ({cart, whish, removeItemFromCart}) => {
                 <div key={item._id} className="cart-item mb-2">
                     <img src={item.thumbnail} alt="course-img" />
                     <div className="desc">
-                        <h3>{item.title}</h3>
-                        <h4>Price ₦ {item.price}</h4>
+                        <p>{item.title}</p>
+                        <p>Price ₦ {item.price}</p>
                     </div>
                     <div className="text-right">
                         <i onClick={handleRemove} name={item._id} className="far fa-trash text-danger" style={{cursor: "pointer"}}></i>

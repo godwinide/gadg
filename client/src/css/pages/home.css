@@ -249,7 +249,7 @@
 
 .c-wrap .course img{
     width: 100%;
-    height: 12em;
+    height: 10em;
     border-radius: 10px;
 }
 
@@ -282,9 +282,9 @@
         display: block;
     }
     .home main{
-        min-height: 0;
-        height: 0;
-        background-image: none;
+        min-height: 10em;
+        /* height: 0; */
+        /* background-image: none; */
     }
     .home .showcase{
         width: 90%;

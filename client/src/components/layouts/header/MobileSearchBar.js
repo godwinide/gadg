@@ -6,8 +6,8 @@ const MobileSearchBar = ({visible, handleOpenSearch}) => {
         <div className={ `mobile-search-bar ${visible && "visible"}`}>
             <div className="search-bar">
                 <i onClick={handleOpenSearch} className="fas fa-arrow-left"></i>
-                <form>
-                <input type="text" id="m-search" autoFocus placeholder="search anything"/>
+                <form action="/search">
+                <input type="text" name="q" id="m-search" autoFocus placeholder="search anything"/>
                 <button>
                     <i className="far fa-search"></i>
                 </button>

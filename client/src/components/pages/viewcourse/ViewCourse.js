@@ -77,6 +77,7 @@ const ViewCourse = props =>{
                     {
                     current.locked
                     ?<div className="video-wrap container mt-5 mx-auto">
+                        <h1 className="purple-text">{current.title}</h1>
                         <p className="lead">Sorry, haven't purchased this topic.</p>
                         <PayButton amount={current.price}
                          successCallBack={()=> true}
@@ -86,7 +87,7 @@ const ViewCourse = props =>{
                          />
                     </div>
                     :<div className="video-wrap">
-                    <h1>{current.title}</h1>
+                    <h1 className="purple-text">{current.title}</h1>
                         {
                             current.video 
                             &&<Player playsInline poster={current.thumbnail}
@@ -109,7 +110,7 @@ const ViewCourse = props =>{
                                         <div className="card-header" id="headingOne">
                                         <h2 className="mb-0">
                                             <button className="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Description
+                                               Show description
                                             </button>
                                         </h2>
                                         </div>

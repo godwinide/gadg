@@ -23,6 +23,7 @@ import About from './pages/about/About';
 import ForgotPassword from './pages/forgotpassword/ForgotPassword';
 import Contact from './pages/contact/Contact';
 import NotFound from './pages/error-pages/NotFound';
+import SearchResult from './pages/search-result/SearchResult';
 
 
 
@@ -40,6 +41,7 @@ const  App = () => {
             <Navbar/>
             <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/search" component={SearchResult}/>
                 <Route exact path="/faculty/:id" component={Faculty} />
                 <Route exact path="/view-course/:id/" component={CourseDetail} />
                 <Route exact path="/cart" component={Cart} />

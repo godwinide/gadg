@@ -3,7 +3,8 @@ const {model, Schema} = require("mongoose");
 const CourseSchema = new Schema({
     title:{
         type: String,
-        required: true
+        required: true,
+        index: "text"
     },
     titleSlug:{
         type: String,
@@ -40,7 +41,8 @@ const CourseSchema = new Schema({
     },
     instructor:{
         type: String,
-        required: true
+        required: true,
+        index: "text"
     },
     faculty:{
         type: String,
@@ -52,7 +54,8 @@ const CourseSchema = new Schema({
     },
     description:{
         type: String,
-        required: true
+        required: true,
+        index: "text"
     },
     date: {
         type: Date,

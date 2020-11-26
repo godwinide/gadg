@@ -163,7 +163,7 @@ const About = () => {
                         <div className="content">
                             <p className="name">Akinuli Olamilekan Prince</p>
                             <p className="title">
-                                Programmer
+                                Service Admin
                             </p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -177,7 +177,7 @@ const About = () => {
                         <div className="content">
                             <p className="name">Godwin Idemudia</p>
                             <p className="title">
-                                Programmer
+                                Service Admin
                             </p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

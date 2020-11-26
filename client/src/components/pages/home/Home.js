@@ -35,12 +35,14 @@ const Home = props => {
                 <div className="showcase hide-mobile">
                 <h1 className="text-left">learn anytime, anywhere.</h1>
                 <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
-                <form className="form-inline hide-mobile">
+                <form className="form-inline hide-mobile" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
                         <input type="text" className="form-control"  placeholder="what do you want to learn?"/>
                         <div className="input-group-prepend">
                         <div className="input-group-text">
-                            <i className="fas fa-search"></i>
+                            <button style={{padding:"0", backgroundColor:"transparent", border:"none"}}>
+                                <i className="fas fa-search text-white"></i>
+                            </button>
                         </div>
                         </div>
                     </div>
@@ -49,12 +51,14 @@ const Home = props => {
             </main>
             {/*  for mobile */}
             <div className="showcase hide-desktop">
-                <form className="form-inline">
+                <form className="form-inline" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
-                        <input type="text" className="form-control"  placeholder="what do you want to learn?"/>
+                        <input type="text" name="q" className="form-control"  placeholder="what do you want to learn?"/>
                         <div className="input-group-prepend">
                         <div className="input-group-text">
-                            <i className="fas fa-search"></i>
+                            <button type="submit" style={{padding:"0", backgroundColor:"transparent", border:"none"}}>
+                                <i className="fas fa-search text-white" style={{backgroundColor:"transparant"}}></i>
+                            </button>
                         </div>
                         </div>
                     </div>
@@ -76,7 +80,7 @@ const Home = props => {
                                 <Link key={i}  to={"/faculty/" + faculty.nameSlug} className="faculty">
                                     <img src={faculty.thumbnail} alt={faculty.name}/>
                                     <div className="info">
-                                        <p>{faculty.name}</p>
+                                        <p className="purple-text truncate">{faculty.name}</p>
                                     </div>
                                 </Link>
                             ))
@@ -112,10 +116,10 @@ const Home = props => {
                         >
                         {
                             courses.reverse().slice(0,11).map((course,key) =>(
-                                <Link key={key} className="course" to={"/view-course/"+course.titleSlug}>
+                                <Link key={key} className="course" to={"/view-course/"+course.titleSlug} style={{marginRight:"1em",minHeight:"20em", maxHeight:"20em"}}>
                                     <img src={course.thumbnail} alt="course"/>
                                     <div>
-                                        <p className="title">{course.title}</p>
+                                        <p className="title purple-text truncate">{course.title}</p>
                                         <p>by {course.instructor}</p>
                                         <h2>₦{course.price}</h2>
                                     </div>

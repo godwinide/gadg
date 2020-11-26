@@ -95,6 +95,9 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                     <div className="author mb-2">
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
+                    <div className="l-info">
+                        <i>click on 'purchase by chapters' to purchase in units</i>
+                    </div>
                     <div className="actions">
                         <ul className="nav nav-tabs mb-3" id="myTab" role="tablist">
                             <li className="nav-item" role="presentation">
@@ -107,7 +110,9 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                 <a className="nav-link" id="custom-tab"
                                  data-toggle="tab" href="#custom" 
                                  role="tab" aria-controls="custom"
-                                  aria-selected="false">Customize</a>
+                                  aria-selected="false"
+                                  > 
+                                    Purchase By Chapters</a>
                             </li>
                             </ul>
                             <div className="tab-content" id="myTabContent">
@@ -155,15 +160,15 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                             course.topics
                                             &&course.topics.map((topic, i) => (
                                                 <li 
-                                                class="list-group-item list-group-item-dark"
+                                                className="list-group-item list-group-item-dark"
                                                  key={i} style={{borderRadius:"10px", marginBottom:".4em", color:"#fff", background:"#000"}}>
-                                                <div class="custom-control custom-checkbox">
+                                                <div className="custom-control custom-checkbox">
                                                 <input onInput={handleCheckTopic}
                                                     data-id={topic.id}
                                                     type="checkbox" 
-                                                    class="custom-control-input"
+                                                    className="custom-control-input"
                                                     id={"check"+(+i+1)} />
-                                                  <label class="custom-control-label" htmlFor={"check"+(+i+1)}>{i+1} {topic.title}</label>
+                                                  <label className="custom-control-label" htmlFor={"check"+(+i+1)}>{i+1} {topic.title}</label>
                                                 </div>
                                              </li>
                                             ))
@@ -182,11 +187,11 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                 </div>
                 <div className="course-content mt-5">
                     <p className="lead">Course Content</p>
-                    <ul class="list-group container">
+                    <ul className="list-group container">
                         {
                             course.topics
                             && course.topics.map((topic, n) => (
-                                <li class="list-group-item">{n+1}. {topic.title}</li>
+                                <li className="list-group-item">{n+1}. {topic.title}</li>
                             ))
                         }
                     </ul>

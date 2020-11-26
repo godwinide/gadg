@@ -6,8 +6,8 @@ const Course = ({course}) =>{
         <div className="course">
             <Link to={"/my-courses/view/"+course._id+"/0"}>
                 <img src={course.thumbnail} alt="course-img"/>
-                <h2>{course.title}</h2>
-                <h3>by Godwin Idemudia</h3>
+                <p className="purple-text truncate">{course.title}</p>
+                <p>by Godwin Idemudia</p>
             </Link>
         </div>
     )

@@ -33,20 +33,20 @@ const Contact = () => {
                 <form>
                     <div className="form-group">
                         <h3>Send Us A Mesage</h3>
-                        <label for="exampleInputEmail1">Full Name</label>
+                        <label htmlFor="exampleInputEmail1">Full Name</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label htmlFor="exampleInputEmail1">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Phone Number</label>
+                        <label htmlFor="exampleInputPassword1">Phone Number</label>
                         <input type="number" className="form-control"/>
                     </div>
                     <div className="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
+                        <label htmlFor="exampleFormControlTextarea1">Message</label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <button type="submit" className="btn btn-dark">Send</button>

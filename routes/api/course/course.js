@@ -102,4 +102,22 @@ router.get("/filterByFaculty/:id", async (req,res) => {
     }
 })
 
+/*  @route /api/courses/search
+    @method get 
+    @access public
+ */
+router.get("/search", async (req,res) => {
+    try{
+        const query = req.query.q;
+        if(query){
+            const courses = await Course.find({$text:{$search:query}});
+            return res.status(200).json({courses});
+        }else{
+            return res.status(200).json({courses:[]});
+        }
+    }catch(err) {
+        console.log(err);
+    }
+})
+
 module.exports = router;

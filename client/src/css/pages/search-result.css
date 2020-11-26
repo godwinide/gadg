@@ -1,0 +1,64 @@
+
+.search{
+    min-height: 100vh;
+    padding: 1em 2em;
+}
+
+.search .result-title{
+    font-size: 1.8em;
+    text-transform: unset;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search .result-title span{
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.search .results{
+    display: flex;
+    flex-direction: column;
+    max-width: 60em;
+}
+
+.search .results .image-wrap{
+    position: relative;
+    margin-right: 1em;
+}
+
+.search .results img{
+    width: 8em;
+    height: 8em;
+}
+
+.search .results .course-item{
+    display: flex;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(236, 235, 235);
+}
+
+.search .results a:hover{
+    color: #000 !important;
+}
+
+.search .results .course-item:hover{
+    background-color: rgb(241, 240, 240);
+}
+
+.search .course-info .course-title{
+    color: var(--p-color-5);
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.search .course-info .course-price{
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search .course-info p{
+    margin: 0;
+}

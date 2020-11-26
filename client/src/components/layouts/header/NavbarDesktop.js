@@ -11,14 +11,14 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
             </Link>
             <div className="nav">
                 {/* search */}
-                <form className="form-inline">
+                <form className="form-inline" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
                         <div className="input-group-prepend">
                         <div className="input-group-text">
                             <i className="fas fa-search"></i>
                         </div>
                         </div>
-                        <input type="text" className="form-control"  placeholder="search for anything"/>
+                        <input type="text" name="q" className="form-control"  placeholder="search for anything"/>
                     </div>
                 </form>
                 {/* nav links */}
