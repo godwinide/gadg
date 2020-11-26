@@ -13,7 +13,7 @@ const PaystackHook = props => {
         reference: (new Date()).getTime(),
         email: "klimaxcodez@gmail.com",
         amount: amount * 100,
-        publicKey: 'pk_test_05f50aed5854be3bf9ce7490d7c085ad1ca45ea7',
+        publicKey: 'pk_test_bace7f5863da9e00735f2eac31034c06d7453ceb',
     };
     
     const onSuccess = (reference) => {

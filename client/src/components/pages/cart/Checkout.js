@@ -55,7 +55,8 @@ const Checkout = props => {
 }
 
 const mapStateToProps = state => ({
-    cart: state.cart.cart
+    cart: state.cart.cart,
+    email: state.auth.user.email
 })
 
 

@@ -9,6 +9,7 @@ import {Player} from 'video-react'
 import 'react-h5-audio-player/lib/styles.css';
 import "../../../css/pages/video-react.css"
 import PayButton from '../../../hooks/PayButton';
+import {connect} from 'react-redux'
 
 const ViewCourse = props =>{
     const [dep, setDep] = useState(0);
@@ -84,6 +85,7 @@ const ViewCourse = props =>{
                          topicID={current.id}
                          courseID={courseID}
                          setDep={setDep}
+                         pprop={props}
                          />
                     </div>
                     :<div className="video-wrap">
@@ -161,4 +163,8 @@ const ViewCourse = props =>{
     )
 }
 
-export default ViewCourse
+const mapStateToProps = state =>({
+    email: state.auth.user.email
+});
+
+export default connect(mapStateToProps)(ViewCourse)
