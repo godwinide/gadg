@@ -11,9 +11,9 @@ const PaystackHook = props => {
     const {amount, clearCart, cart, loadUser, startLoading, stopLoading, pprop} = props;
     const config = {
         reference: (new Date()).getTime(),
-        email: "klimaxcodez@gmail.com",
+        email: props.pprop.email,
         amount: amount * 100,
-        publicKey: 'pk_test_bace7f5863da9e00735f2eac31034c06d7453ceb',
+        publicKey: 'pk_live_a06a24174151ac8629e3bbf0445b95c799b8d9fc',
     };
     
     const onSuccess = (reference) => {

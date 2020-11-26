@@ -13,7 +13,7 @@ const PayButton = props => {
         reference: (new Date()).getTime(),
         email: props.pprop.email,
         amount: amount * 100,
-        publicKey: 'pk_test_bace7f5863da9e00735f2eac31034c06d7453ceb',
+        publicKey: 'pk_live_a06a24174151ac8629e3bbf0445b95c799b8d9fc',
     };
     
     const onSuccess = (reference) => {
