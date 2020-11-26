@@ -7,7 +7,7 @@ const Course = ({course}) =>{
             <Link to={"/my-courses/view/"+course._id+"/0"}>
                 <img src={course.thumbnail} alt="course-img"/>
                 <p className="purple-text truncate">{course.title}</p>
-                <p>by Godwin Idemudia</p>
+                <p>{course.instructor}</p>
             </Link>
         </div>
     )
