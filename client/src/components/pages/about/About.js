@@ -88,7 +88,6 @@ const About = () => {
                 <LightSpeed left>
                     <h1 className="purple-text">why choose us?</h1>
                 </LightSpeed>
-                <Jump>
                 <div className="grid-view">
                     <div className="box box-1">
 
@@ -236,7 +235,6 @@ const About = () => {
 
                     </div>
                 </div>
-                </Jump>
             </section>
 
             {/* team */}
