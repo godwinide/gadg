@@ -7,7 +7,7 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
         <div className="header nav-desktop">
             <div className="nav-wrap">
             <Link to="/" className="brand-logo">
-                <img src="/img/logo.png" alt="GadgAcademia"/>
+                <img src="/img/logo2.png" alt="GadgAcademia"/>
             </Link>
             <div className="nav">
                 {/* search */}
@@ -33,7 +33,7 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         <i className="far fa-play-circle"></i>{" "}
                         My Courses</NavLink>
                         <NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</NavLink>
-                        <NavLink to="#" onClick={logout} className="btn btn-secondary">Logout</NavLink>
+                        <button onClick={logout} className="btn btn-secondary logout-btn">Logout</button>
                         <NavLink to="/profile" className="avatar">
                             {user.firstname[0].toUpperCase() + user.lastname[0].toUpperCase()}
                         </NavLink></>

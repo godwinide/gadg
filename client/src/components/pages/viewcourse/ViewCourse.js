@@ -103,7 +103,7 @@ const ViewCourse = props =>{
                                     autoPlay={false}
                                     // preload
                                 />
-                                <a download={current && current.pdf} href={current.pdf} className="btn btn-info" style={{marginTop:"2em", display:"block"}}>
+                                <a download={current && current.pdf} href={current.pdf} className="btn purple-bg text-white" style={{marginTop:"2em", display:"block"}}>
                                     <i className="fas fa-arrow-down"></i>{" "}
                                     Download PDF
                                 </a>

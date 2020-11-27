@@ -3,7 +3,7 @@
 }
 
 .home-page{
-    background-color: rgb(236, 234, 234);
+    background-color: rgb(253, 253, 255) !important;
 }
 
 .home-page .input-group-text{
@@ -66,7 +66,7 @@
 
 .home .faculties{
     padding: 1em;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .home .faculties h1{
@@ -86,7 +86,7 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 2px 2px 10px rgb(230, 228, 228);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
     padding: .5em;
 }
 
@@ -106,8 +106,9 @@
 }
 .home .intro .grid-view{
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 60% 40%;
     grid-gap: 1%;
+    padding-bottom: 5em !important;
 }
 .home h1{
     text-align: center;
@@ -128,46 +129,9 @@
     padding: 2em 0;
 }
 .home .wcu h1{
-    color: crimson;
     font-size: 2.3em;
 }
-.home .wcu .grid-view{
-    display: grid;
-    grid-template-columns: repeat(3,32%);
-    grid-gap: 2%;
-}
-.home .grid-view .box{
-    box-shadow: 2px 2px 5px rgb(216, 214, 214);
-    border-radius: 10px;
-}
-.home .grid-view .box h3{
-    text-align: center;
-}
-.home .grid-view .box:nth-child(1){
-    background-color: #f1c50e;
-}
-.home .grid-view .box:nth-child(2){
-    background-color: #435df8;
-}
-.home .grid-view .box:nth-child(3){
-    background-color: #2cccc4;
-}
-.home .grid-view .box .icon-box{
-    text-align: center;
-    padding: 1em;
-}
-.home .grid-view .box img{
-    width: 6em;
-    height: 6em;
-    padding: .5em;
-    background-color: #fff;
-    border-radius: 50%;
-}
-.home .grid-view .box .content-box{
-    padding: 1em;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-}
+
 .home .team{
     background-color: #fff;
     padding: 3em;
@@ -227,9 +191,11 @@
 .home .team .profiles .profile:nth-child(3) .img{
     background-image: url(/img/joeffrey.jpg);
 }
+
 .home .team .profiles .profile:nth-child(4) .img{
     background-image: url(/img/chalton.jpg);
 }
+
 .home .team .profiles .profile:nth-child(5) .img{
     background-image: url(/img/lakesbim.jpg);
 }
@@ -242,10 +208,10 @@
     position: relative;
     padding: .7em;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgb(189, 189, 189);
+    box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.705);
     display: block;
+    background-color: #fff;
 }
-
 
 .c-wrap .course img{
     width: 100%;
@@ -270,8 +236,6 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
-
-
 
 
 @media screen and (max-width: 768px){

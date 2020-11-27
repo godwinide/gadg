@@ -3,9 +3,13 @@
     --p-color-2: rgb(85, 21, 85);
     --p-color-3: #ec3636;
     --p-color-4: #ec5252;
+    --p-color-4-1: #ff0281;
     --p-color-5: rgb(110, 11, 197);
+    --p-color-6: rgb(68, 2, 126);
+    --p-color-7: rgb(31, 0, 58);
+    --p-color-8: rgb(92, 5, 168);
+    --p-color-9: rgb(88, 14, 138);
 }
-
 
 body{
     font-family: 'Roboto Slab', serif;
@@ -15,6 +19,23 @@ body{
     box-sizing: border-box;
     min-height: 100vh !important;
 }
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--p-color-3) var(--p-color-3);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--p-color-3) ;
+    border-radius: 6px;
+    border: 3px solid var(--p-color-3);
+}
+
 .truncate{
     white-space: nowrap;
     overflow: hidden;
@@ -25,8 +46,17 @@ body{
     color: var(--p-color-5);
 }
 
+.pink-text{
+    color: var(--p-color-3);
+}
+
+.purple-bg{
+    background-color: var(--p-color-6) !important;
+}
+
 .brand-logo{
-    background-color: #fff;
+    background-color: var(--p-color-9);
+    border-radius: 10px;
     /* height: 100% !important; */
     padding: 1em;
 }
@@ -52,8 +82,9 @@ a:hover{
 }
 
 
-a.active{
-    color: var(--p-color-3);
+.header ul a.active,
+.header ul a.active i{
+    color: var(--p-color-4-1) !important;
 }
 
 footer{

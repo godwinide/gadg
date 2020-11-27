@@ -25,8 +25,7 @@
 }
 
 .sidemenu .nav-wrap{
-    /* background-image: linear-gradient(to right, rgb(61, 175, 228), rgb(206, 4, 206)); */
-    background-image: linear-gradient(to right, rgb(12, 107, 151), rgb(206, 4, 206));
+    background-color: var(--p-color-7);
 }
 
 .sidemenu .nav-wrap img{

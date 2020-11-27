@@ -1,6 +1,8 @@
 .about-us-wrap{
     min-height: 100vh;
     padding-bottom: 5em;
+    background-color: rgb(234, 236, 241) !important;
+
 }
 .about-us .mission-wrap{
     background-color: rgb(234, 236, 241);
@@ -10,6 +12,7 @@
 .about-us .mission{
     background-color: rgb(255, 255, 255);
     padding: 2em;
+    border-radius: 10px;
 }
 .about-us .mission-wrap h1{
     text-transform: capitalize;
@@ -24,7 +27,6 @@
 }
 
 .about-wrap{
-    background: url("/img/office2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,6 +42,31 @@
     text-align: center;
     border-radius: 10px;
     padding: 1em;
+}
+.home .wcu .grid-view{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.home .grid-view .box{
+    box-shadow: 2px 2px 5px rgb(216, 214, 214);
+    border-radius: 10px;
+    display: grid;
+    margin-bottom: 1em;
+}
+.home .grid-view .box h3{
+    text-align: center;
+}
+.home .grid-view .box{
+    background-color: #f0f0df;
+}
+.home .grid-view .box .icon-box{
+    text-align: center;
+}
+
+.home .grid-view .box .content-box{
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 

@@ -96,7 +96,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
                     <div className="l-info">
-                        <i>click on 'purchase by chapters' to purchase in units</i>
+                        <i>Click on 'purchase by chapters' to purchase in units</i>
                     </div>
                     <div className="actions">
                         <ul className="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -130,7 +130,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                         ?<Link to="/cart" className="btn btn-info">
                                         <i className="far fa-shopping-cart"></i>
                                         {" "}Go to Cart</Link>
-                                        :<button className="btn" onClick={handleAddToCart}>
+                                        :<button className="btn btn-secondary" onClick={handleAddToCart}>
                                         <i className="far fa-shopping-cart"></i>
                                         Add to Cart</button>
                                     }
@@ -148,7 +148,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                         ?<Link to="/cart" className="btn btn-info">
                                         <i className="far fa-shopping-cart"></i>
                                         {" "}Go to Cart</Link>
-                                        :<button className="btn" onClick={handleAddToCart2} style={{margin:"0 !important"}}>
+                                        :<button className="btn btn-secondary" onClick={handleAddToCart2} style={{margin:"0 !important"}}>
                                         <i className="far fa-shopping-cart"></i>
                                         Add to Cart</button>
                                     }
@@ -180,7 +180,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                     </div>
                 </div>
             </div>
-        <div className="container mb-5">
+        <div className="container pb-5">
             <div className="course-description mt-5">
                     <p className="lead">Course description</p>
                     <p>{course.description}</p>

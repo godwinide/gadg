@@ -33,7 +33,7 @@ const Home = props => {
         <div className="home home-page">
             <main>
                 <div className="showcase hide-mobile">
-                <h1 className="text-left">learn anytime, anywhere.</h1>
+                <h1 className="text-left purple-text">learn anytime, anywhere.</h1>
                 <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
                 <form className="form-inline hide-mobile" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
@@ -67,7 +67,7 @@ const Home = props => {
 
             {/* faculties */}
             <div className="faculties">
-                <h1>Faculties</h1>
+                <h1 className="purple-text">Faculties</h1>
                 {
                     facultyLoading
                     ?<FacultiesSkeleton/>
@@ -90,7 +90,7 @@ const Home = props => {
             </div>
 
             <div className="faculties course-scroll">
-                <h1>Newly Added</h1>
+                <h1 className="purple-text">Newly Added</h1>
                 {
                     coursesLoading
                     ?<FacultiesSkeleton/>
@@ -120,8 +120,8 @@ const Home = props => {
                                     <img src={course.thumbnail} alt="course"/>
                                     <div>
                                         <p className="title purple-text truncate">{course.title}</p>
-                                        <p>by {course.instructor}</p>
-                                        <h2>₦{course.price}</h2>
+                                        <p className="text-dark">by {course.instructor}</p>
+                                        <h2 className="text-dark">₦{course.price}</h2>
                                     </div>
                                 </Link>
                             ))

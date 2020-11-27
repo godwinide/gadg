@@ -10,19 +10,21 @@ const MyCourses = ({courses}) =>{
         document.documentElement.scrollTop = 0
     },[])
     return (
-        <div className="mycourses container p-2">
-        <div className="c-nav text-center">
-            <h3 className="text-center">My Courses</h3>
-        </div>
-        <div className="courses">
-            {
-                courses.length > 0
-                ?courses.map((course,i) => (
-                    <Course key={i} course={course} />
-                ))
-                :<p className="text-center">You havent purchased any course.</p>
-            }
-        </div>
+        <div className="purple-bg">
+            <div className="mycourses container">
+                <div className="c-nav text-center">
+                    <h3 className="text-center">My Courses</h3>
+                </div>
+                <div className="courses">
+                    {
+                        courses.length > 0
+                        ?courses.map((course,i) => (
+                            <Course key={i} course={course} />
+                        ))
+                        :<p className="text-center">You havent purchased any course.</p>
+                    }
+                </div>
+            </div>
         </div>
     )
 }
