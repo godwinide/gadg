@@ -78,7 +78,7 @@ const ViewCourse = props =>{
                     {
                     current.locked
                     ?<div className="video-wrap container mt-5 mx-auto">
-                        <h1 className="text-white">{current.title}</h1>
+                        <h1 className="purple-text">{current.title}</h1>
                         <p className="lead">Sorry, haven't purchased this topic.</p>
                         <PayButton amount={current.price}
                          successCallBack={()=> true}
@@ -89,7 +89,7 @@ const ViewCourse = props =>{
                          />
                     </div>
                     :<div className="video-wrap">
-                    <h1>{current.title}</h1>
+                    <h1 className="purple-text">{current.title}</h1>
                         {
                             current.video 
                             &&<Player playsInline poster={current.thumbnail}
@@ -101,24 +101,22 @@ const ViewCourse = props =>{
                                 <AudioPlayer
                                     src={current.audio}
                                     autoPlay={false}
-                                    className="purple-bg m-player"
+                                    className=" m-player"
                                     // preload
                                 />
-                                <a download={current && current.pdf} href={current.pdf} className="btn purple-bg text-white" style={{marginTop:"2em", display:"block"}}>
+                                <a download={current && current.pdf} href={current.pdf} className="btn  btn-dark" style={{marginTop:"2em", display:"block"}}>
                                     <i className="fas fa-arrow-down"></i>{" "}
                                     Download PDF
                                 </a>
                                 <div className="accordion mt-2" id="accordionExample">
                                     <div className="card">
-                                        <div className="card-header purple-bg" id="headingOne">
-                                        <h2 className="mb-0 purple-bg">
-                                            <button className="btn btn-block text-left text-white purple-bg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div className="card-header " id="headingOne">
+                                            <button className="btn btn-block text-left btn-dark " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                click to show description
                                             </button>
-                                        </h2>
                                         </div>
                                         <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div className="card-body purple-bg">
+                                        <div className="card-body ">
                                             <p className="mt-3">{current.desc}</p>
                                         </div>
                                         </div>
