@@ -9,6 +9,7 @@
     --p-color-7: rgb(31, 0, 58);
     --p-color-8: rgb(92, 5, 168);
     --p-color-9: rgb(88, 14, 138);
+    --p-color-10: rgb(240, 255, 30);
 }
 
 body{
@@ -21,19 +22,19 @@ body{
 }
 
 body::-webkit-scrollbar {
-    width: 11px;
+    width: 15px;
 }
 body {
     scrollbar-width: thin;
-    scrollbar-color: var(--p-color-3) var(--p-color-3);
+    scrollbar-color: var(--p-color-8) var(--p-color-8);
 }
 body::-webkit-scrollbar-track {
-    background: var(--scrollbarBG);
+    background: var(--p-color-7);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: var(--p-color-3) ;
+    background-color: var(--p-color-8) ;
     border-radius: 6px;
-    border: 3px solid var(--p-color-3);
+    border: 3px solid var(--p-color-8);
 }
 
 .truncate{
@@ -70,8 +71,9 @@ a{
     color: #000;
 }
 
-a:hover{
-    color: var(--p-color-3);
+header ul i:hover,
+header ul a:hover{
+    color: var(--p-color-10) !important;
     text-decoration: none;
 }
 
@@ -84,7 +86,9 @@ a:hover{
 
 .header ul a.active,
 .header ul a.active i{
-    color: var(--p-color-4-1) !important;
+    /* color: var(--p-color-4-1) !important; */
+    color: var(--p-color-10) !important;
+    font-weight: 700;
 }
 
 footer{

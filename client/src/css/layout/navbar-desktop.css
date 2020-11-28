@@ -87,13 +87,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header a:hover{
-    color: var(--p-color-3) !important;
-}
-
-.header a:active{
-    color: var(--p-color-3) !important;
-}
 
 .header .s-action{
     background-color: var(--p-color-3);

@@ -96,7 +96,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
                     <div className="l-info">
-                        <i>Click on 'purchase by chapters' to purchase in units</i>
+                        <p>Click on 'purchase by chapters' to purchase in units</p>
                     </div>
                     <div className="actions">
                         <ul className="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -187,11 +187,11 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                 </div>
                 <div className="course-content mt-5">
                     <p className="lead">Course Content</p>
-                    <ul className="list-group container">
+                    <ul className="list-group container topiclist">
                         {
                             course.topics
                             && course.topics.map((topic, n) => (
-                                <li className="list-group-item">{n+1}. {topic.title}</li>
+                                <li className="list-group-item topiclist">{n+1}. {topic.title}</li>
                             ))
                         }
                     </ul>

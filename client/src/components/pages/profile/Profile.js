@@ -126,24 +126,16 @@ class Profile extends Component  {
                         </div>
                     }
                     <div className="form-group">
-                        <label for="inputPassword1">Current Password:</label>
-                        <input autoComplete="current-pasword" value={this.state.currentPass} name="currentPass" onInput={this.handleInput} type="password" id="inputPassword1" className="form-control mx-sm-3" aria-describedby="passwordHelpInline"/>
+                        <input autoComplete="current-pasword" value={this.state.currentPass} name="currentPass" onInput={this.handleInput} type="password" id="inputPassword1" className="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="current password"/>
                     </div>
                     <div className="form-group">
-                    <label for="inputPassword2">New Password:</label>
-                        <input autoComplete="new-password" value={this.state.newPass} name="newPass" onInput={this.handleInput} type="password" id="inputPassword2" className="form-control mx-sm-3" aria-describedby="passwordHelpInline"/>
-                        <small id="passwordHelpInline" className="text-muted">
-                        Must be 8-20 characters long.
-                        </small>
+                        <input autoComplete="new-password" value={this.state.newPass} name="newPass" onInput={this.handleInput} type="password" id="inputPassword2" className="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="new password"/>
                     </div>
                     <div className="form-group">
-                    <label for="inputPassword3">Retype Password:</label>
-                        <input autoComplete="new-password" value={this.state.newPass2} name="newPass2" onInput={this.handleInput} type="password" id="inputPassword3" className="form-control mx-sm-3" aria-describedby="passwordHelpInline"/>
-                        <small id="passwordHelpInline" className="text-muted">
-                        Must be 8-20 characters long.
-                        </small>
+                        <input autoComplete="new-password" value={this.state.newPass2} name="newPass2" onInput={this.handleInput} type="password" id="inputPassword3" className="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="retype password"/>
                     </div>
-                    {
+                   <div className="form-group">
+                   {
                         this.state.sending
                         ?<button type="button" className="btn btn-secondary" style={{display: "flex", alignItems:"center"}}>Please wait {" "}
                         <div className="spinner-border" role="status" style={{width:"1em", height:"1em"}}>
@@ -152,6 +144,7 @@ class Profile extends Component  {
                         </button> 
                         :<button className="btn btn-primary">Update</button> 
                     }
+                   </div>
                 </form>
             </div>
         </div>

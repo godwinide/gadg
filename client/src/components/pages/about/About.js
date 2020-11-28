@@ -303,7 +303,7 @@ const About = () => {
                         <div className="content">
                             <p className="name">Akinuli Olamilekan Prince</p>
                             <p className="purple-text">
-                                Software Engineer
+                                Service Admin
                             </p>
                             <p>
                                 He is the CEO of Lakesbim IT, a young entrepreneur, a software engineer.
@@ -315,7 +315,7 @@ const About = () => {
                         <div className="content">
                             <p className="name">Godwin Idemudia</p>
                             <p className="purple-text">
-                                Software Engineer
+                                Service Admin
                             </p>
                             <p>
                                 He is a software engineer who has an innate love of writing code to solve complex issues

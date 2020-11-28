@@ -2,13 +2,19 @@
     margin-top: 1em;
     max-width: 1500px;
     margin: auto;
-    background-color: rgb(250, 246, 246);
+    background-color: var(--p-color-8);
+    color: #fff;
 }
 .view-course h1{
     font-size: 1.3em;
     margin-bottom: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.view-course .m-player .rhap_time{
+    color: #fff !important;
+}
+
 .course-view{
     display: flex;
 }
@@ -19,6 +25,14 @@
 .course-view .side-nav{
     height: 100vh;
     width: 30%;
+    background-color: var(--p-color-8);
+}
+
+.course-view .side-nav .card,
+.course-view .side-nav button{
+    background-color: var(--p-color-8);
+    color: #fff;
+    box-shadow: 0 0 0 #000 !important;
 }
 
 .course-view .side-nav button.active{

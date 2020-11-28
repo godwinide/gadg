@@ -77,7 +77,7 @@
 }
 .preview .author h3{
     font-size: 1em;
-    color: var(--p-color-3);
+    color: #fff;
 }
 
 .preview h2{
@@ -123,8 +123,8 @@
     color: #fff;
 }
 
-.courselist{
-    color: #000;
+.topiclist{
+    background-color: var(--p-color-8);
 }
 
 @media screen and (max-width: 1000px){
@@ -135,6 +135,11 @@
 
 .preview {
     margin-left: 0 !important;
+    padding: 0 !important;
+}
+
+.preview .nav{
+    flex-wrap: nowrap;
 }
 
 .preview .actions button{

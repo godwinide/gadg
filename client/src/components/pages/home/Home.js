@@ -67,7 +67,7 @@ const Home = props => {
 
             {/* faculties */}
             <div className="faculties">
-                <h1 className="purple-text">Faculties</h1>
+                <h1 className="text-white">Faculties</h1>
                 {
                     facultyLoading
                     ?<FacultiesSkeleton/>
@@ -80,7 +80,7 @@ const Home = props => {
                                 <Link key={i}  to={"/faculty/" + faculty.nameSlug} className="faculty">
                                     <img src={faculty.thumbnail} alt={faculty.name}/>
                                     <div className="info">
-                                        <p className="purple-text truncate">{faculty.name}</p>
+                                        <p className="text-white truncate">{faculty.name}</p>
                                     </div>
                                 </Link>
                             ))
@@ -90,7 +90,7 @@ const Home = props => {
             </div>
 
             <div className="faculties course-scroll">
-                <h1 className="purple-text">Newly Added</h1>
+                <h1 className="text-white">Newly Added</h1>
                 {
                     coursesLoading
                     ?<FacultiesSkeleton/>
@@ -119,9 +119,9 @@ const Home = props => {
                                 <Link key={key} className="course" to={"/view-course/"+course.titleSlug} style={{marginRight:"1em",minHeight:"20em", maxHeight:"20em"}}>
                                     <img src={course.thumbnail} alt="course"/>
                                     <div>
-                                        <p className="title purple-text truncate">{course.title}</p>
-                                        <p className="text-dark">by {course.instructor}</p>
-                                        <h2 className="text-dark">₦{course.price}</h2>
+                                        <p className="title text-white truncate">{course.title}</p>
+                                        <p>by {course.instructor}</p>
+                                        <h2>₦{course.price}</h2>
                                     </div>
                                 </Link>
                             ))

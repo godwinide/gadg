@@ -89,7 +89,7 @@ const ViewCourse = props =>{
                          />
                     </div>
                     :<div className="video-wrap">
-                    <h1 className="purple-text">{current.title}</h1>
+                    <h1>{current.title}</h1>
                         {
                             current.video 
                             &&<Player playsInline poster={current.thumbnail}
@@ -101,6 +101,7 @@ const ViewCourse = props =>{
                                 <AudioPlayer
                                     src={current.audio}
                                     autoPlay={false}
+                                    className="purple-bg m-player"
                                     // preload
                                 />
                                 <a download={current && current.pdf} href={current.pdf} className="btn purple-bg text-white" style={{marginTop:"2em", display:"block"}}>
@@ -109,15 +110,15 @@ const ViewCourse = props =>{
                                 </a>
                                 <div className="accordion mt-2" id="accordionExample">
                                     <div className="card">
-                                        <div className="card-header" id="headingOne">
-                                        <h2 className="mb-0">
-                                            <button className="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                               Show description
+                                        <div className="card-header purple-bg" id="headingOne">
+                                        <h2 className="mb-0 purple-bg">
+                                            <button className="btn btn-block text-left text-white purple-bg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                               click to show description
                                             </button>
                                         </h2>
                                         </div>
                                         <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div className="card-body">
+                                        <div className="card-body purple-bg">
                                             <p className="mt-3">{current.desc}</p>
                                         </div>
                                         </div>
@@ -133,7 +134,7 @@ const ViewCourse = props =>{
                 <div className="accordion mr-4 my-4 mx-auto" id="accordionExample">
                     <div className="card">
                         <p className="text-center lead">Course Topics</p>
-                        <ul className="list-group">
+                        <ul className="list-group course-topics">
                             {
                                 topics.map((top,i) => (
                                     top.locked

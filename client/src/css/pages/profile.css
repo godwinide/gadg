@@ -1,4 +1,28 @@
 .profile-wrap{
     min-height: 100vh;
     padding: 2em 1em;
+    background-color: var(--p-color-8);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+}
+
+.profile-wrap ul,
+.profile-wrap li{
+    background-color: var(--p-color-7) !important;
+}
+
+.profile-wrap button{
+    background-color: var(--p-color-7);
+    border-color: var(--p-color-7);
+    margin-left: 1em;
+}
+
+.profile-wrap small{
+    color: #fff !important;
+}
+
+.profile-wrap form input{
+    width: 100% !important;
+    border-radius: 10px !important;
 }
