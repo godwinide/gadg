@@ -32,7 +32,7 @@ const About = () => {
                         </div>
                         <div className="image-wrap hide-mobile">
                             <Rotate>
-                                <img src="/img/student.jpg" alt="student"/>
+                                <img src="/img/brand.jpeg" alt="student"/>
                             </Rotate>
                         </div>
                     </div>

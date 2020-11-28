@@ -56,7 +56,7 @@ const Faculty = props =>{
         ? <NotFound/>
         : courses.length > 0
         ?
-        <div className="faculty">
+        <div className="faculty purple-bg">
             <div className="heading">
                 <div className="shadow"></div>
                 <img src={faculty.thumbnail} className="banner" alt="banner"/>
@@ -68,7 +68,7 @@ const Faculty = props =>{
                         <Link className="course" to={"/view-course/"+course.titleSlug}>
                             <img src={course.thumbnail} alt="course"/>
                             <div info>
-                                <p className="title purple-text truncate">{course.title}</p>
+                                <p className="title text-white truncate">{course.title}</p>
                                 <p>by {course.instructor}</p>
                                 <h2>₦{course.price}</h2>
                             </div>

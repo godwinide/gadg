@@ -4,7 +4,7 @@ import Skeleton from 'react-loading-skeleton'
 
 const FacultySkeleton = props =>{
     return (
-        <div className="faculty">
+        <div className="faculty purple-bg">
             <Skeleton height="20em" width="100%"/>
             <div className="course-list">
                 <Skeleton className="course" height="10em"/>
