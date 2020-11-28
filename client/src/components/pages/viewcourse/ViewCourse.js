@@ -78,7 +78,7 @@ const ViewCourse = props =>{
                     {
                     current.locked
                     ?<div className="video-wrap container mt-5 mx-auto">
-                        <h1 className="purple-text">{current.title}</h1>
+                        <h1 className="text-white">{current.title}</h1>
                         <p className="lead">Sorry, haven't purchased this topic.</p>
                         <PayButton amount={current.price}
                          successCallBack={()=> true}
