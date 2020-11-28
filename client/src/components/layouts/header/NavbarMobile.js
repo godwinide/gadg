@@ -26,7 +26,7 @@ const NavbarMobile = ({pprop:{cart, logout, auth:{isAuthenticated}}}) =>{
                 <i className="fas fa-bars" onClick={handleMenu}></i>
             </div>
             <div className="m-logo-wrap brand-logo">
-                <img src="/img/logo.png2" alt="gadgacademia"></img>
+                <img src="/img/logo2.png" alt="gadgacademia"></img>
             </div>
             {
                 isAuthenticated
