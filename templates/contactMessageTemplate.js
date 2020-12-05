@@ -4,10 +4,10 @@ module.exports = (email, name, phone, body) => {
     <h1>Message from ${name}</h1>
     <h2>email: ${email}</h2>
     <h2>phone: ${phone}</h2>
-    <p>Message:</p>
-    <h1>
+    <h2>Message:</h2>
+    <p>
         ${body}
-    </h1>
+    </p>
     </div>
     `
 }

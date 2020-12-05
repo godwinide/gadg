@@ -9,7 +9,7 @@ router.post("/", async (req,res) => {
     }
     else{
         const temp = contactMessageTemplate(email, name, phone, body);
-        sendmail('klimaxcodez@gmail.com', 'Customer Contact', temp);
+        sendmail('gadg.gadgacademia@gmail.com', 'Customer Contact Message', temp);
         return res.status(200).json({msg:"Your Message Has Been Sent, We Will Get Back To You As Soon As Possible."})
     }
 });
