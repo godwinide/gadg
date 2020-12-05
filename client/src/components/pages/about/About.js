@@ -249,12 +249,10 @@ const About = () => {
                         <div className="content">
                             <p className="name">Ogiemwanye Nosa Ighodaro</p>
                             <p className="purple-text">
-                                CEO/FOUNDER
+                                CEO & FOUNDER
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            He is the founder of Gadg, he drives strategic vision and manages investor relations.
                             </p>
                         </div>
                     </div>
@@ -292,9 +290,7 @@ const About = () => {
                                 Human Resources
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            He is a passionate individual who put his best into whatever he does. He believes in bringing out the best in people. He believes that Gadg academia is here to solve the deficiencies/gap in the learning process and system in Nigeria and Africa Universities at large
                             </p>
                         </div>
                     </div>
