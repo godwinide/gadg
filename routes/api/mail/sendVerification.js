@@ -18,7 +18,7 @@ router.post("/", async (req,res) => {
             verifycode: code
         });
         sendmail(email, 'Verification Code', temp);
-        return res.status(200).json({msg:"verification code has been sent, check your inbox and spam."})
+        return res.status(200).json({msg:"verification code has been sent, check your inbox and spam folders."})
     }
 });
 
