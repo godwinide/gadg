@@ -11,7 +11,7 @@ const auth = require("../../../middleware/auth");
 // @access public
 router.get("/all", async (req,res) => {
     try{
-        const courses = await Course.find({published:true})
+        const courses = await Course.find({published:true});
         return res.status(200).json({
             success: true,
             courses

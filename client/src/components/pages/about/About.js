@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import '../../../css/pages/about.css'
 import {Parallax} from 'react-parallax'
 import {Fade, Rotate, Slide, LightSpeed} from 'react-reveal'
-import Jump from 'react-reveal'
 import RubberBand from 'react-reveal'
 import '../../../css/pages/home.css'
 
@@ -259,26 +258,12 @@ const About = () => {
                     <div className="profile">
                         <div className="img"></div>
                         <div className="content">
-                            <p className="name">Cummings Jerry</p>
-                            <p className="purple-text">
-                                Content Creator
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile">
-                        <div className="img"></div>
-                        <div className="content">
                             <p className="name">Jeoffrey Ogunsuyi Sunny</p>
                             <p className="purple-text">
                                 Content Creator
                             </p>
                             <p>
-                                He is a policy analyst and content enthusiast who had partner with allot of startup organisation in achieving top quality delivery on diverse project. A key team member in Gadg Academia which he dream is going to take the world by storm.
+                                He is a policy analyst and content enthusiast. A key team member in Gadg Academia which he dream is going to take the world by storm.
                             </p>
                         </div>
                     </div>
@@ -290,7 +275,7 @@ const About = () => {
                                 Human Resources
                             </p>
                             <p>
-                            He is a passionate individual who put his best into whatever he does. He believes in bringing out the best in people. He believes that Gadg academia is here to solve the deficiencies/gap in the learning process and system in Nigeria and Africa Universities at large
+                            He is a passionate individual who put his best into whatever he does.
                             </p>
                         </div>
                     </div>
@@ -302,7 +287,7 @@ const About = () => {
                                 Service Admin
                             </p>
                             <p>
-                                He is the CEO of Lakesbim IT, a young entrepreneur, a software engineer.
+                                Passionte and enthusiastic software engineer.
                             </p>
                         </div>
                     </div>

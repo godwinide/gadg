@@ -49,6 +49,7 @@ const Home = props => {
                 </form>
                 </div>
             </main>
+
             {/*  for mobile */}
             <div className="showcase hide-desktop">
                 <form className="form-inline" action="/search">
@@ -88,7 +89,7 @@ const Home = props => {
                     </div>
                 }
             </div>
-
+            {/* newly added */}
             <div className="faculties course-scroll">
                 <h1 className="text-white">Newly Added</h1>
                 {
