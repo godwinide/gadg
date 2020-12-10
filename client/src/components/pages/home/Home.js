@@ -73,7 +73,7 @@ const Home = props => {
                     facultyLoading
                     ?<FacultiesSkeleton/>
                     : faculties.length === 0 
-                    ? <p className="lead text-center">No Faculties Available Right Now.</p>
+                    ? <p className="lead text-center text-white">No Faculties Available Right Now.</p>
                     :
                     <div className="faculties-wrap">
                         {
@@ -96,7 +96,7 @@ const Home = props => {
                     coursesLoading
                     ?<FacultiesSkeleton/>
                     : courses.length === 0 
-                    ? <p className="lead text-center">No Courses Available Right Now.</p>
+                    ? <p className="lead text-center text-white">No Courses Available Right Now.</p>
                     :
                     <Carousel
                         swipeable={false}
