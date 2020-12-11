@@ -148,4 +148,14 @@
     .about-us h2{
         font-size: 2em !important;
     }
+    
+    .home .team .profiles .profile{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 0%;
+    }
+
+    .home .team .profiles .profile .img{ 
+        margin: 0;
+    }
 }

@@ -263,7 +263,7 @@ const About = () => {
                                 Content Creator
                             </p>
                             <p>
-                                He is a policy analyst and content enthusiast. A key team member in Gadg Academia which he dream is going to take the world by storm.
+                                He is a policy analyst and content enthusiast.
                             </p>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ const About = () => {
                                 Service Admin
                             </p>
                             <p>
-                                He is a software engineer who has an innate love of writing code to solve complex issues
+                                He is a software engineer who has an innate love of writing code to solve complex issues.
                             </p>
                         </div>
                     </div>
