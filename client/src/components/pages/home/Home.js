@@ -92,7 +92,7 @@ const Home = props => {
             </div>
             {/* newly added */}
             <div className="faculties course-scroll">
-                <h1 className="text-white">Newly Added</h1>
+                <h1 className="text-white">Newly Added Audiobooks(with free PDF)</h1>
                 {
                     coursesLoading
                     ?<FacultiesSkeleton/>
