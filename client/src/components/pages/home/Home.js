@@ -21,8 +21,8 @@ const Home = props => {
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
+          items: 2,
+          slidesToSlide: 2 // optional, default to 1.
         }
       };
     useEffect(()=>{
@@ -99,13 +99,13 @@ const Home = props => {
                     ? <p className="lead text-center text-white">No Courses Available Right Now.</p>
                     :
                     <Carousel
-                        swipeable={false}
+                        swipeable={true}
+                        autoPlay={true}
                         draggable={false}
-                        showDots={true}
                         responsive={responsive}
                         ssr={true} // means to render carousel on server-side.
                         infinite={true}
-                        autoPlaySpeed={1000}
+                        autoPlaySpeed={5000}
                         keyBoardControl={true}
                         customTransition="all .5"
                         transitionDuration={500}
@@ -114,6 +114,7 @@ const Home = props => {
                         dotListClass="custom-dot-list-style"
                         itemClass="carousel-item-padding-40-px"
                         className="c-wrap p-2"
+                        
                         >
                         {
                             courses.reverse().slice(0,11).map((course,key) =>(
