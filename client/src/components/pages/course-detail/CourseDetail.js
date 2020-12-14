@@ -96,8 +96,9 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
                     <div className="l-info">
+                        <i>Note: Each course chapter contains  audiobook, PDF and video(coming soon). Read the course content below to know more.</i>
                         <p className="text-warning">Click on 'Purchase By Chapters' to purchase in units</p>
-                        <i>Note: Each course chapter contains video, audiobook and PDF. Read the course content below to know more.</i>
+
                     </div>
                     <div className="actions">
                         <ul className="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -105,13 +106,14 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                 <a className="nav-link active" id="onetime-tab" 
                                 data-toggle="tab" href="#onetime" 
                                 role="tab" aria-controls="onetime"
+                                style={{border:"1px solid #fff"}}
                                  aria-selected="true">Full Payment</a>
                             </li>
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link" id="custom-tab"
                                  data-toggle="tab" href="#custom" 
                                  role="tab" aria-controls="custom"
-                                  aria-selected="false"
+                                  aria-selected="false" style={{border:"1px solid #fff"}}
                                   > 
                                     Purchase By Chapters</a>
                             </li>
@@ -119,7 +121,8 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                             <div className="tab-content" id="myTabContent">
                             <div className="tab-pane fade show active" id="onetime" role="tabpanel" aria-labelledby="onetime-tab">
                                     <p className="text-white">
-                                        Full Payment with all course files with discount 
+                                    <i className="fas fa-info bg-warning p-2" style={{borderRadius:"50%"}}></i>{" "}
+                                        Full Payment of all course chapters attract discount below. 
                                     </p>
                                     <div className="price-wrap">
                                         <p className="lead">₦{course.discountPrice} ({course.discount}% off)</p>
@@ -155,13 +158,13 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                     }
                                 </div>
                                 <div className="course-list-wrap">
-                                    <p>check at least one topic you want to purchase</p>
+                                    <p>Select the chapters you want to purchase(select at least one)</p>
                                     <ul className="list-group list-group-flush courselist">
                                         {
                                             course.topics
                                             &&course.topics.map((topic, i) => (
                                                 <li 
-                                                className="list-group-item list-group-item-dark"
+                                                className="list-group-item list-group-item-secondary"
                                                  key={i} style={{borderRadius:"10px", marginBottom:".4em", color:"#fff", background:"#000"}}>
                                                 <div className="custom-control custom-checkbox">
                                                 <input onInput={handleCheckTopic}
