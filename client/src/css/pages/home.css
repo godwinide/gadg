@@ -158,17 +158,17 @@
     font-size: 1.2em;
     margin-bottom: 0;
     margin-top: .5em;
-    font-family: 'Nunito', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .c-wrap .course p{
     margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter !important;
 }
 .c-wrap .course h2{
     font-size: 1.4em;
-    font-family: 'Nunito', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 
