@@ -122,7 +122,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                             <div className="tab-pane fade show active" id="onetime" role="tabpanel" aria-labelledby="onetime-tab">
                                     <p className="text-white">
                                     <i className="fas fa-info bg-warning p-2" style={{borderRadius:"50%"}}></i>{" "}
-                                        Full Payment of all course chapters attract discount below. 
+                                        Full Payment of all course chapters attract discount, see below. 
                                     </p>
                                     <div className="price-wrap">
                                         <p className="lead">₦{course.discountPrice} ({course.discount}% off)</p>

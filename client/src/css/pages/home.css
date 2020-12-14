@@ -140,6 +140,12 @@
     display: block;
     background-color: var(--p-color-7);
     color: #fff;
+    text-decoration: none;
+}
+
+
+.c-wrap .course:hover{
+    color: var(--p-color-3);
 }
 
 .c-wrap .course img{
