@@ -32,10 +32,9 @@ const Home = props => {
     return (
         <div className="home home-page">
             <main>
-                <div className="showcase hide-mobile hide-tablet">
+                <div className="showcase hide-mobile hide-mobile">
                 <h1 className="text-left purple-text">learn anytime, anywhere.</h1>
-                {/* <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p> */}
-                <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
+                <p>Learning keeps you in the lead. Start learning effortlessly with our high quality audiobooks and free PDF..</p>
                 <form className="form-inline hide-mobile" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
                         <input type="text" className="form-control"  placeholder="what do you want to learn?"/>
@@ -131,6 +130,9 @@ const Home = props => {
                         }
                     </Carousel>
                 }
+                <div className="alert alert-info text-center" role="alert">
+                    Watch Out For Our New Courses With Audiobooks And Free PDFs Published Every 72hrs.
+                </div>
             </div>
         </div>
     )

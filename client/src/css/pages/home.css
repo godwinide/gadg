@@ -86,7 +86,14 @@
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
     padding: .5em;
     background-color: var(--p-color-7);
+    text-decoration: none;
 }
+
+.home .faculties-wrap .faculty:hover {
+    color: var(--p-color-7);
+}
+
+
 
 .home .faculties-wrap .faculty img{
     width: 100%;
