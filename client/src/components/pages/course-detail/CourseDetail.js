@@ -169,7 +169,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                                     type="checkbox" 
                                                     className="custom-control-input"
                                                     id={"check"+(+i+1)} />
-                                                  <label className="custom-control-label" htmlFor={"check"+(+i+1)}>{i+1} {topic.title}</label>
+                                                  <label className="custom-control-label" htmlFor={"check"+(+i+1)}>{topic.title}</label>
                                                 </div>
                                              </li>
                                             ))
