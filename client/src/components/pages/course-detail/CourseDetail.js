@@ -206,7 +206,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                     </td>
                                     <td>
                                             { topic.video && <li className="list-group-item purple-bg">Video</li> }
-                                            { topic.audio && <li className="list-group-item purple-bg">Audio</li> }
+                                            { topic.audio && <li className="list-group-item purple-bg">Audiobook</li> }
                                             { topic.pdf && <li className="list-group-item purple-bg">PDF(free to download)</li> }
                                     </td>
                                 </tr>
