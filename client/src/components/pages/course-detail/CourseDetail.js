@@ -193,7 +193,6 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Description</th>
                         <th scope="col">Content</th>
                     </tr>
                     </thead>
@@ -204,9 +203,6 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                                 <tr key={n}>
                                     <td>
                                         {topic.title}
-                                    </td>
-                                    <td className="">
-                                        {topic.desc}
                                     </td>
                                     <td>
                                             { topic.video && <li className="list-group-item purple-bg">Video</li> }

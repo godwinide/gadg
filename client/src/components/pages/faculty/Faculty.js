@@ -70,7 +70,7 @@ const Faculty = props =>{
                             <div info>
                                 <p className="title text-white truncate">{course.title}</p>
                                 <p>by {course.instructor}</p>
-                                <h2 style={{textTransform:"capitalize"}}>₦{course.pricePerTopic} per chapter</h2>
+                                <h2 className="h-price">₦{course.pricePerTopic} per chapter</h2>
                             </div>
                         </Link>
                     ))

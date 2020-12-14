@@ -75,6 +75,9 @@ body::-webkit-scrollbar-thumb {
     width: 13em;
 }
 
+h2.h-price{
+    text-transform: lowercase !important;
+}
 
 .brand-logo{
     background-color: var(--p-color-9);
