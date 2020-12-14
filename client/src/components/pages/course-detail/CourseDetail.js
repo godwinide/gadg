@@ -96,7 +96,8 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
                     <div className="l-info">
-                        <p>Click on 'purchase by chapters' to purchase in units</p>
+                        <p className="text-warning">Click on 'Purchase By Chapters' to purchase in units</p>
+                        <i>Note: Each course chapter contains video, audiobook and PDF. Read the course content below to know more.</i>
                     </div>
                     <div className="actions">
                         <ul className="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -118,7 +119,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                             <div className="tab-content" id="myTabContent">
                             <div className="tab-pane fade show active" id="onetime" role="tabpanel" aria-labelledby="onetime-tab">
                                     <p className="text-white">
-                                        Full Payment with all course videos and files with discount 
+                                        Full Payment with all course files with discount 
                                     </p>
                                     <div className="price-wrap">
                                         <p className="lead">₦{course.discountPrice} ({course.discount}% off)</p>
@@ -187,14 +188,36 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                 </div>
                 <div className="course-content mt-5">
                     <p className="lead">Course Content</p>
-                    <ul className="list-group container topiclist">
-                        {
+                    
+                    <table class="table table-borderless purple-bg text-white">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th>Description</th>
+                        <th>Content</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {
                             course.topics
                             && course.topics.map((topic, n) => (
-                                <li className="list-group-item topiclist">{n+1}. {topic.title}</li>
+                                <tr key={n}>
+                                    <td>
+                                        {topic.title}
+                                    </td>
+                                    <td className="">
+                                        {topic.desc}
+                                    </td>
+                                    <td>
+                                            { topic.video && <li className="list-group-item purple-bg">Video</li> }
+                                            { topic.audio && <li className="list-group-item purple-bg">Audio</li> }
+                                            { topic.pdf && <li className="list-group-item purple-bg">PDF(free to download)</li> }
+                                    </td>
+                                </tr>
                             ))
                         }
-                    </ul>
+                    </tbody>
+                    </table>
                 </div>
                 </div>
             </div>

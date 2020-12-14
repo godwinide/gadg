@@ -34,6 +34,7 @@ const Home = props => {
             <main>
                 <div className="showcase hide-mobile hide-tablet">
                 <h1 className="text-left purple-text">learn anytime, anywhere.</h1>
+                {/* <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p> */}
                 <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
                 <form className="form-inline hide-mobile" action="/search">
                     <div className="input-group mb-2 mr-sm-2">
@@ -123,7 +124,7 @@ const Home = props => {
                                     <div>
                                         <p className="title text-white truncate">{course.title}</p>
                                         <p>by {course.instructor}</p>
-                                        <h2>₦{course.price}</h2>
+                                        <h2>₦{course.pricePerTopic} per chapter</h2>
                                     </div>
                                 </Link>
                             ))
