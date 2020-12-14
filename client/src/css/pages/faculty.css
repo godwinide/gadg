@@ -75,5 +75,8 @@
 @media screen and (max-width: 1000px){
    .course-list{
         grid-template-columns: repeat(2, 48%);
+        grid-gap: 0% !important;
+        width: 100%;
+        margin: 0;
    }
 }
