@@ -189,7 +189,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                 <div className="course-content mt-5">
                     <p className="lead">Course Content</p>
                     
-                    <table class="table table-borderless purple-bg text-white">
+                    <table class="table table-striped purple-bg text-white">
                     <thead>
                     <tr>
                         <th scope="col">#</th>
