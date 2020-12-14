@@ -96,7 +96,7 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                         <h3 style={{display:"inline"}}>By {course.instructor}</h3>
                     </div>
                     <div className="l-info">
-                        <i>Note: Each course chapter contains  audiobook, PDF and video(coming soon). Read the course content below to know more.</i>
+                        <i>Note: Each course chapter contains  audiobook, free PDF and video(coming soon). Read the course content below to know more.</i>
                         <p className="text-warning">Click on 'Purchase By Chapters' to purchase in units</p>
 
                     </div>
