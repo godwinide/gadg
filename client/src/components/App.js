@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect, Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import store from '../store';
 import {fetchFaculties, fetchAllCourses} from '../actions/CourseActions'
@@ -39,6 +39,11 @@ const  App = () => {
     return (
         <Router>
             <Navbar/>
+            <div className="h-title hide-tablet">
+                <Link to="/">
+                    <img src="/img/logo2.png" alt="gadgacademia"/>
+                </Link>
+            </div>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/search" component={SearchResult}/>

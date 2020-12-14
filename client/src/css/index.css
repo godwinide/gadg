@@ -55,6 +55,27 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--p-color-6) !important;
 }
 
+.h-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .4em 0;
+    background-color: var(--p-color-7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+.h-title a{
+    text-decoration: none;
+}
+.h-title a img{
+    width: 13em;
+}
+
+
 .brand-logo{
     background-color: var(--p-color-9);
     border-radius: 10px;
@@ -96,6 +117,7 @@ footer{
     color: #fff;
     padding: 0 2em;
     width: 100%;
+    font-size: 16px !important;
 }
 
 footer ul{
@@ -111,6 +133,34 @@ footer p{
     margin: 0;
 }
 
+
+.hide-desktop{
+    display: none;
+}
+
+
+.hide-tablet{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .hide-tablet{
+        display: block !important;
+    }
+    body{
+        margin-top: 4.7em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hide-mobile{
+        display: none;
+    }
+    .hide-desktop{
+        display: block;
+    }
+
+}
 
 @media screen and (max-width: 1000px){
     body{

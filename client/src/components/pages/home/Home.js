@@ -32,7 +32,7 @@ const Home = props => {
     return (
         <div className="home home-page">
             <main>
-                <div className="showcase hide-mobile">
+                <div className="showcase hide-mobile hide-tablet">
                 <h1 className="text-left purple-text">learn anytime, anywhere.</h1>
                 <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
                 <form className="form-inline hide-mobile" action="/search">
