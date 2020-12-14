@@ -193,8 +193,8 @@ const CourseDetail = ({match:{params:{id}}, addItemToCart, cart}) =>{
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th>Description</th>
-                        <th>Content</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Content</th>
                     </tr>
                     </thead>
                     <tbody>

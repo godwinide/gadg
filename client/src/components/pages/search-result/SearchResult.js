@@ -70,7 +70,7 @@ const SearchResult = (props) => {
                                     <div className="course-info">
                                         <p className="course-title truncate">{course.title}</p>
                                         <p className="course-author">By {course.instructor}</p>
-                                        <p className="course-price">N{course.price}</p>
+                                        <p className="course-price" style={{textTransform:"capitalize"}}>N{course.price}</p>
                                     </div>
                                 </div>
                                 </Link>

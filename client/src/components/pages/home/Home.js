@@ -124,7 +124,7 @@ const Home = props => {
                                     <div>
                                         <p className="title text-white truncate">{course.title}</p>
                                         <p>by {course.instructor}</p>
-                                        <h2>₦{course.pricePerTopic} per chapter</h2>
+                                        <h2 style={{textTransform:"capitalize"}}>₦{course.pricePerTopic} per chapter</h2>
                                     </div>
                                 </Link>
                             ))
