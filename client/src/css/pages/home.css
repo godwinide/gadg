@@ -107,9 +107,6 @@
     font-size: 1.4em;
 }
 
-.home .react-multi-carousel-list{
-    display: grid !important;
-}
 
 .home .intro{
     color: #fff;
@@ -204,6 +201,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     font-weight: bolder;
+    font-size: 1.2em;
 }
 .countdown-wrap span:nth-child(1){
     background-color: var(--p-color-3);
