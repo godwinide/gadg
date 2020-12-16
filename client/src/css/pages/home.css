@@ -60,6 +60,11 @@
     width: 100%;
 }
 
+.home .course p {
+    font-weight: lighter !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 .home .faculties{
     padding: 1em;
@@ -165,18 +170,51 @@
     font-size: 1.2em;
     margin-bottom: 0;
     margin-top: .5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 .c-wrap .course p{
     margin-bottom: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter !important;
 }
 .c-wrap .course h2{
-    font-size: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+.countdown-wrapper{
+    margin-top: 2em;
+    background-color: var(--p-color-8);
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.countdown-wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-gap: 1%;
+    max-width: 30em;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.countdown-wrapper h3{
+    font-size: 1.1em !important;
+} 
+.countdown-wrap span{
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.countdown-wrap span:nth-child(1){
+    background-color: var(--p-color-3);
+}
+.countdown-wrap span:nth-child(2){
+    background-color: blueviolet;
+}
+.countdown-wrap span:nth-child(3){
+    background-color: darkorange;
+}
+.countdown-wrap span:nth-child(4){
+    background-color: dodgerblue;
 }
 
 

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import '../../../css/pages/home.css'
 import {connect} from 'react-redux'
@@ -8,6 +8,13 @@ import "react-multi-carousel/lib/styles.css";
 
 const Home = props => {
     const {faculties, facultyLoading, courses, coursesLoading} = props;
+    // timer state
+    const [days, setDays] = useState(0);
+    const [hours, setHours] = useState(0);
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+    const [counting, setCounting] = useState(false)
+    // image slider
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
@@ -25,9 +32,40 @@ const Home = props => {
           slidesToSlide: 2 // optional, default to 1.
         }
       };
+    const startCountDown = () => {
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 20, 2020 07:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            setCounting(false);
+        }
+        }, 1000);
+    };
     useEffect(()=>{
         document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0
+        document.documentElement.scrollTop = 0;
+        startCountDown();
     },[])
     return (
         <div className="home home-page">
@@ -121,17 +159,28 @@ const Home = props => {
                                 <Link key={key} className="course" to={"/view-course/"+course.titleSlug} style={{marginRight:"1em",minHeight:"20em", maxHeight:"20em"}}>
                                     <img src={course.thumbnail} alt="course"/>
                                     <div>
-                                        <p className="title text-white truncate">{course.title}</p>
-                                        <p>by {course.instructor}</p>
-                                        <h2 className="h-price">₦{course.pricePerTopic} per chapter</h2>
+                                        <p className="title text-white">{course.title}</p>
+                                        <p className="text-warning">by {course.instructor}</p>
+                                        <p className="h-price">₦{course.pricePerTopic} per chapter</p>
                                     </div>
                                 </Link>
                             ))
                         }
                     </Carousel>
                 }
-                <div className="alert alert-info text-center" role="alert">
-                    Watch Out For Our New Courses With Audiobooks And Free PDFs Published Every 72hrs.
+                <div className="countdown-wrapper text-center">
+                    <h3>Watch Out For Our New Courses With Audiobooks And Free PDFs Coming Soon.</h3>
+                    <div className="countdown-wrap">
+                        <span><h2>{days}</h2>
+                         <p>Days</p></span>
+                        <span><h2>{hours}</h2>
+                         <p>Hours</p></span>
+                        <span><h2>{minutes}</h2>
+                         <p>Minutes</p></span>
+                        <span><h2>{seconds}</h2>
+                         <p>Seconds</p></span>
+
+                    </div>
                 </div>
             </div>
         </div>

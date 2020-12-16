@@ -43,6 +43,10 @@ body::-webkit-scrollbar-thumb {
     text-overflow: ellipsis;
 }
 
+.bold-text{
+    font-weight: bold !important;
+}
+
 .purple-text{
     color: var(--p-color-5);
 }
@@ -75,9 +79,6 @@ body::-webkit-scrollbar-thumb {
     width: 13em;
 }
 
-h2.h-price{
-    text-transform: lowercase !important;
-}
 
 .brand-logo{
     background-color: var(--p-color-9);
@@ -88,6 +89,7 @@ h2.h-price{
 
 h1,h2,h3,h4{
     text-transform: uppercase !important;
+    font-weight: lighter !important;
 }
 
 a{
