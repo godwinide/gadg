@@ -9,10 +9,6 @@ import {connect} from 'react-redux'
 const Navbar = props => {
     return (
         <div>
-            <div className="alert alert-info alert-dismissible fade show text-center" role="alert" style={{margin:"0"}}>
-            <strong className="text-center">
-            Anytime, anywhere | Learn on your schedule from any device</strong>.
-            </div>
             <NavbarDesktop pprop={props}/>
             <NavbarMobile pprop={props}/>
         </div>
