@@ -148,7 +148,6 @@
 .c-wrap .course {
     position: relative;
     padding: .7em;
-    min-height: 15em !important;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.705);
     display: block;
