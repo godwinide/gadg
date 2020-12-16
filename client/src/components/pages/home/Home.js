@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom'
 import '../../../css/pages/home.css'
 import {connect} from 'react-redux'
 import FacultiesSkeleton from './FacultiesSkeleton'
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-import {slidesToShowPlugin} from '@brainhubeu/react-carousel'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Home = props => {
     const {faculties, facultyLoading, courses, coursesLoading} = props;
@@ -139,49 +136,23 @@ const Home = props => {
                     : courses.length === 0 
                     ? <p className="lead text-center text-white">No Courses Available Right Now.</p>
                     :
-                    // <Carousel
-                    //     swipeable={true}
-                    //     autoPlay={true}
-                    //     draggable={false}
-                    //     responsive={responsive}
-                    //     ssr={true} // means to render carousel on server-side.
-                    //     infinite={true}
-                    //     autoPlaySpeed={5000}
-                    //     keyBoardControl={true}
-                    //     customTransition="all .5"
-                    //     transitionDuration={500}
-                    //     containerClass="carousel-container"
-                    //     removeArrowOnDeviceType={["tablet", "mobile"]}
-                    //     dotListClass="custom-dot-list-style"
-                    //     itemClass="carousel-item-padding-40-px"
-                    //     className="c-wrap p-2"
-                        
-                    //     >
-                    //     {
-                    //         courses.reverse().slice(0,11).map((course,key) =>(
-                    //             <Link key={key} className="course" to={"/view-course/"+course.titleSlug} style={{marginRight:"1em",minHeight:"20em", maxHeight:"20em"}}>
-                    //                 <img src={course.thumbnail} alt="course"/>
-                    //                 <div>
-                    //                     <p className="title text-white">{course.title}</p>
-                    //                     <p className="text-warning">by {course.instructor}</p>
-                    //                     <p className="h-price">₦{course.pricePerTopic} per chapter</p>
-                    //                 </div>
-                    //             </Link>
-                    //         ))
-                    //     }
-                    // </Carousel>
                     <Carousel
-                    plugins={[
-                        'infinite',
-                        'arrows',
-                        {
-                          resolve: slidesToShowPlugin,
-                          options: {
-                           numberOfSlides: 2
-                          }
-                        },
-                      ]}
-                  >
+                        swipeable={true}
+                        autoPlay={false}
+                        draggable={true}
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlaySpeed={5000}
+                        keyBoardControl={true}
+                        customTransition="all .5"
+                        transitionDuration={500}
+                        containerClass="carousel-container"
+                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                        dotListClass="custom-dot-list-style"
+                        itemClass="carousel-item-padding-40-px"
+                        className="c-wrap p-2"
+                        
+                        >
                         {
                             courses.reverse().slice(0,11).map((course,key) =>(
                                 <Link key={key} className="course" to={"/view-course/"+course.titleSlug} style={{marginRight:"1em",minHeight:"20em", maxHeight:"20em"}}>
@@ -194,7 +165,8 @@ const Home = props => {
                                 </Link>
                             ))
                         }
-                  </Carousel>
+                    </Carousel>
+                    
                 }
                 <div className="countdown-wrapper text-center">
                     <h3>Watch Out For Our New Courses With Audiobooks And Free PDFs Coming Soon.</h3>
