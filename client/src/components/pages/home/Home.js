@@ -151,7 +151,6 @@ const Home = props => {
                         dotListClass="custom-dot-list-style"
                         itemClass="carousel-item-padding-40-px"
                         className="c-wrap p-2"
-                        
                         >
                         {
                             courses.reverse().slice(0,11).map((course,key) =>(
@@ -174,11 +173,11 @@ const Home = props => {
                         <span><h2>{days}</h2>
                          <p>Days</p></span>
                         <span><h2>{hours}</h2>
-                         <p>Hours</p></span>
+                         <p>Hrs</p></span>
                         <span><h2>{minutes}</h2>
-                         <p>Minutes</p></span>
+                         <p>Mins</p></span>
                         <span><h2>{seconds}</h2>
-                         <p>Seconds</p></span>
+                         <p>Secs</p></span>
 
                     </div>
                 </div>
