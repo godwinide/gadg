@@ -181,7 +181,7 @@
     margin-top: 2em;
     background-color: var(--p-color-8);
     color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif
 }
 
 .countdown-wrap{
@@ -201,7 +201,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+.countdown-wrap p{
+    font-size: .9em;
 }
 .countdown-wrap span:nth-child(1){
     background-color: var(--p-color-3);

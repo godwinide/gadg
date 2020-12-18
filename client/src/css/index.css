@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 
 h1,h2,h3,h4{
     text-transform: uppercase !important;
-    font-weight: lighter !important;
+    font-weight: bold !important;
 }
 
 a{

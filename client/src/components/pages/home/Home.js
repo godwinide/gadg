@@ -158,7 +158,7 @@ const Home = props => {
                                     <img src={course.thumbnail} alt="course"/>
                                     <div>
                                         <p className="title text-white">{course.title}</p>
-                                        <p className="text-warning">by {course.instructor}</p>
+                                        <b className="text-warning" style={{fontWeight: "bold"}}>by {course.instructor}</b>
                                         <p className="h-price">₦{course.pricePerTopic} per chapter</p>
                                     </div>
                                 </Link>
@@ -173,11 +173,11 @@ const Home = props => {
                         <span><h2>{days}</h2>
                          <p>Days</p></span>
                         <span><h2>{hours}</h2>
-                         <p>Hrs</p></span>
+                         <p>Hours</p></span>
                         <span><h2>{minutes}</h2>
-                         <p>Mins</p></span>
+                         <p>Minutes</p></span>
                         <span><h2>{seconds}</h2>
-                         <p>Secs</p></span>
+                         <p>Seconds</p></span>
 
                     </div>
                 </div>

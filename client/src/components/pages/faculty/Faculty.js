@@ -69,7 +69,7 @@ const Faculty = props =>{
                             <img src={course.thumbnail} alt="course"/>
                             <div info>
                                 <p className="title text-white">{course.title}</p>
-                                <p className="text-warning">by {course.instructor}</p>
+                                <b className="text-warning" style={{fontWeight:"bold"}}>by {course.instructor}</b>
                                 <p className="h-price">₦{course.pricePerTopic} per chapter</p>
                             </div>
                         </Link>
