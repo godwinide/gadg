@@ -34,7 +34,7 @@ const Home = props => {
       };
     const startCountDown = () => {
         // Set the date we're counting down to
-        var countDownDate = new Date("Dec 20, 2020 07:00:00").getTime();
+        var countDownDate = new Date("Dec 26, 2020 07:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
