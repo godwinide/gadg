@@ -51,6 +51,73 @@ router.post("/login", async (req,res) => {
     }
 })
 
+// @route POST /api/users/auth/login
+// @access private
+router.post("/login/v2", async (req,res) => {
+    const {email, password, ip} = req.body;
+
+    const errors = [];
+    const return_errors = status => {
+        return res.status(status).json({
+            success: false,
+            errors
+        })
+    }
+    if(!email || !password || !ip){
+        errors.push({msg:"Please fill all fields!"})
+        return_errors(400);
+    }
+    else{
+        try{
+            const user = await User.findOne({email})
+            if(!user) {
+                errors.push({msg: "Incorrect email or password"})
+                return_errors(400);
+            }else{                
+                const matched = await bcrypt.compare(password, user.password)
+                if(!matched){
+                    errors.push({msg: "Incorrect email or password"})
+                    return_errors(400)
+                }else{
+                    // check ip address
+                    if(user.ip){
+                        if(user.ip !== ip){
+                            errors.push({msg: "You can't login into more than one device!"})
+                            return_errors(400);
+                        }else{
+                            const token = jwt.sign(
+                                {id: user.id},
+                                process.env.JWTSECRET,
+                                {expiresIn: "1d"}
+                            )
+                            return res.status(200).json({
+                                success: true,
+                                user,
+                                token
+                            })   
+                        }
+                    }else{
+                        await user.updateOne({ip})
+                        const token = jwt.sign(
+                                {id: user.id},
+                                process.env.JWTSECRET,
+                                {expiresIn: "1d"}
+                        )
+                        return res.status(200).json({
+                            success: true,
+                            user,
+                            token
+                        })
+                    }
+                }
+            }
+        }catch(err){
+            console.log(err)
+            res.status(500).json({msg:"internal server error"})
+        }
+    }
+})
+
 
 
 /// @route POST /api/users/auth/login
@@ -81,6 +148,7 @@ router.post("/changePassword", auth, async (req,res) => {
         }else{
             const {currentPass, newPass, newPass2} = req.body;
             if(!currentPass || !newPass2 || !newPass){
+                console.log(req.body)
                 return res.status(400).json({msg: "Please fill all fields"});
             }
             if(newPass !== newPass2){

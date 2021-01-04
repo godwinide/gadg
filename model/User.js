@@ -41,6 +41,11 @@ const UserSchema = new Schema({
         required: false,
         default: {}
     },
+    ip:{
+        type: String,
+        required: false,
+        default: ""
+    },
     createdAt:{
         type: Date,
         required: false,

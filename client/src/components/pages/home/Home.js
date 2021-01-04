@@ -32,40 +32,9 @@ const Home = props => {
           slidesToSlide: 2 // optional, default to 1.
         }
       };
-    const startCountDown = () => {
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 26, 2020 07:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        setDays(days);
-        setHours(hours);
-        setMinutes(minutes);
-        setSeconds(seconds);
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            setCounting(false);
-        }
-        }, 1000);
-    };
     useEffect(()=>{
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        startCountDown();
     },[])
     return (
         <div className="home home-page">
@@ -167,20 +136,6 @@ const Home = props => {
                     </Carousel>
                     
                 }
-                <div className="countdown-wrapper text-center">
-                    <h3>Watch Out For Our New Courses With Audiobooks And Free PDFs Coming Soon.</h3>
-                    <div className="countdown-wrap">
-                        <span><h2>{days}</h2>
-                         <p>Days</p></span>
-                        <span><h2>{hours}</h2>
-                         <p>Hours</p></span>
-                        <span><h2>{minutes}</h2>
-                         <p>Minutes</p></span>
-                        <span><h2>{seconds}</h2>
-                         <p>Seconds</p></span>
-
-                    </div>
-                </div>
             </div>
         </div>
     )

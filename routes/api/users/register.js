@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // @route POST /api/users/register
-// @access private
+// @access public
 router.post("/", async (req,res) => {
     const {email, phone, firstname, lastname, password, password2} = req.body;
     const errors = [];

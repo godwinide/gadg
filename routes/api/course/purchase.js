@@ -44,16 +44,17 @@ router.post("/", auth, async (req,res) => {
 // unluck a course topic
 router.post("/topic", auth, async(req,res) => {
     try{
-        const {courseID,topicID} = req.body;
+        const {courseID,topicID,reference} = req.body;
         const newSale = {
             student: req.user,
-            price,
+            price:0,
             reference
         };
         // update user
         const user = await User.findById(req.user.id);
         const newCourses = user.courses.filter(course => course._id !== courseID);
         const targetCourse = user.courses.filter(course => course._id === courseID)[0];
+        newSale.price = targetCourse.pricePerTopic;
         const newTopics = targetCourse.topics.map(topic => {
             const _topic = topic;
             if(topic.id === topicID){
@@ -71,6 +72,7 @@ router.post("/topic", auth, async(req,res) => {
         await sale.save();
         return res.status(200).json({success:true});
     }catch(err){
+        console.log(err);
         return res.status(200).json({success:false});
     }
 })
