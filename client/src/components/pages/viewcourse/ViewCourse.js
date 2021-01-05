@@ -104,9 +104,9 @@ const ViewCourse = props =>{
                                     className=" m-player"
                                     // preload
                                 />
-                                <a download={current && current.pdf} href={current.pdf} className="btn  btn-dark" style={{marginTop:"2em", display:"block"}}>
+                                <a download={current && current.pdf} href="https://play.google.com/store/search?q=gadgacademia" className="btn  btn-dark" style={{marginTop:"2em", display:"block"}}>
                                     <i className="fas fa-arrow-down"></i>{" "}
-                                    Download PDF
+                                    Read PDF
                                 </a>
                                 <div className="accordion mt-2" id="accordionExample">
                                     <div className="card">
