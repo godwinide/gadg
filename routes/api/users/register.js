@@ -37,7 +37,7 @@ router.post("/", async (req,res) => {
                 firstname,
                 lastname,
                 phone,
-                email
+                email: email.toLowerCase()
             };
                 const salt = await bcrypt.genSalt()
                 const hash = await bcrypt.hash(password2, salt);

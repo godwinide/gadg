@@ -22,7 +22,7 @@ router.post("/login", async (req,res) => {
     }
     else{
         try{
-            const user = await User.findOne({email})
+            const user = await User.findOne({email: email.toLowerCase()})
             if(!user) {
                 errors.push({msg: "Incorrect email or password"})
                 return_errors(400);
@@ -69,7 +69,7 @@ router.post("/login/v2", async (req,res) => {
     }
     else{
         try{
-            const user = await User.findOne({email})
+            const user = await User.findOne({email: email.toLowerCase()})
             if(!user) {
                 errors.push({msg: "Incorrect email or password"})
                 return_errors(400);
@@ -189,7 +189,7 @@ router.post("/changePassword2", async (req,res) => {
         return res.status(400).json({msg:"Both password are not thesame"});
     }            
     try{
-        const user = await User.findOne({email});
+        const user = await User.findOne({email: email.toLowerCase()});
         if(!user){
             return res.status(400).json({msg: "a user with that email does not exist"})
         }
