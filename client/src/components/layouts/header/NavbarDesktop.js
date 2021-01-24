@@ -27,11 +27,12 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         isAuthenticated
                         ?<>
                         <NavLink exact to="/">Home</NavLink>
+                        <NavLink exact to="/">Download our app</NavLink>
                         <NavLink to="/about">About Us</NavLink>
                         <NavLink to="/contact">Contact Us</NavLink>
                         <NavLink to="/my-courses">
                         <i className="far fa-play-circle"></i>{" "}
-                        My Courses</NavLink>
+                        y Courses</NavLink>
                         <NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</NavLink>
                         <button onClick={logout} className="btn btn-secondary logout-btn">Logout</button>
                         <NavLink to="/profile" className="avatar">
