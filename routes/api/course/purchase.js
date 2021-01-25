@@ -124,7 +124,7 @@ router.post("/topic/lecturer", auth, async(req,res) => {
             if(course.id === videoID){
                 return {
                     ...course,
-                    sales: course.sales+newSale.price
+                    sales: Number(course.sales)+Number(newSale.price)
                 }
             }
             return course
