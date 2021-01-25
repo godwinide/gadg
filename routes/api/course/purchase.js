@@ -98,6 +98,7 @@ router.post("/topic/lecturer", auth, async(req,res) => {
             if(topic.id == topicID){
                 const newProfVids = topic.lecturers.map(vid => {
                     if(vid.id == videoID){
+                        console.log(videoID)
                         newSale.price = vid.price;
                         share = vid.share;
                         return {
