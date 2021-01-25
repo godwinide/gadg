@@ -80,7 +80,7 @@ router.post("/topic", auth, async(req,res) => {
 
 
 // unluck a lecturer topic
-router.post("/topic/professor", auth, async(req,res) => {
+router.post("/topic/lecturer", auth, async(req,res) => {
     try{
         const {courseID,topicID,videoID,lecturerID,reference} = req.body;
         const newSale = {
