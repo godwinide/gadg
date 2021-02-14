@@ -104,7 +104,7 @@ const ViewCourse = props =>{
                                     className=" m-player"
                                     // preload
                                 />
-                                <a download={current && current.pdf} href="https://play.google.com/store/search?q=gadgacademia" className="btn  btn-dark" style={{marginTop:"2em", display:"block"}}>
+                                <a download={current && current.pdf} href="http://play.google.com/store/apps/details?id=com.gadgacademia" className="btn  btn-dark" style={{marginTop:"2em", display:"block"}}>
                                     <i className="fas fa-arrow-down"></i>{" "}
                                     Read PDF
                                 </a>

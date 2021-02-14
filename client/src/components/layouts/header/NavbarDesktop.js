@@ -32,7 +32,7 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         <NavLink to="/contact">Contact Us</NavLink>
                         <NavLink to="/my-courses">
                         <i className="far fa-play-circle"></i>{" "}
-                        y Courses</NavLink>
+                        Courses</NavLink>
                         <NavLink to="/cart" className="cart-i"><sup className="badge badge-danger">{cart.length}</sup><i className="far fa-shopping-cart"></i> Cart</NavLink>
                         <button onClick={logout} className="btn btn-secondary logout-btn">Logout</button>
                         <NavLink to="/profile" className="avatar">
