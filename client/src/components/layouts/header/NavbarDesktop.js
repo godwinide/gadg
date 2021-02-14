@@ -27,7 +27,7 @@ const NavbarDesktop = ({pprop:{cart, logout, auth:{isAuthenticated, user}}}) => 
                         isAuthenticated
                         ?<>
                         <NavLink exact to="/">Home</NavLink>
-                        <NavLink exact to="/">Download our app</NavLink>
+                        <NavLink exact to="http://play.google.com/store/apps/details?id=com.gadgacademias">Get app</NavLink>
                         <NavLink to="/about">About Us</NavLink>
                         <NavLink to="/contact">Contact Us</NavLink>
                         <NavLink to="/my-courses">
