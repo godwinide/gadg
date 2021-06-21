@@ -12,7 +12,7 @@ module.exports = app => {
     app.use("/api/messages/sendMessage", require("./routes/api/mail/sendMessage"));
 
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     });
 
 
